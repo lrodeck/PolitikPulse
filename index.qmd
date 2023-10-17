@@ -171,6 +171,7 @@ Eine Entdeckungstour in den Large Language Modellen
 :::
 
 ::: {.g-col-12 .g-col-md-2}
+
 ### About us
 
 [Our aims](about.qmd)\

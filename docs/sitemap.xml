@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://politikpulse.net/index.html</loc>
-    <lastmod>2023-10-17T15:34:14.356Z</lastmod>
+    <lastmod>2023-10-17T18:50:20.881Z</lastmod>
   </url>
   <url>
     <loc>https://politikpulse.net/studies/index.html</loc>
@@ -26,10 +26,14 @@
   </url>
   <url>
     <loc>https://politikpulse.net/latest_content.html</loc>
-    <lastmod>2023-10-17T15:34:16.553Z</lastmod>
+    <lastmod>2023-10-17T18:50:21.952Z</lastmod>
   </url>
   <url>
     <loc>https://politikpulse.net/contact.html</loc>
     <lastmod>2023-10-17T14:52:36.804Z</lastmod>
+  </url>
+  <url>
+    <loc>https://politikpulse.net/essays/2023_10_LR_ESSAY_AI/index.html</loc>
+    <lastmod>2023-10-17T18:50:23.717Z</lastmod>
   </url>
 </urlset>

@@ -40,6 +40,9 @@
     "opinions\\index.qmd": [
       "posts",
       "!index.qmd"
+    ],
+    "essays\\2023_10_LR_ESSAY_AI\\index.qmd": [
+      "posts"
     ]
   }
 }

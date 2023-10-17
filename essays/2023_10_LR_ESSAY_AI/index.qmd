@@ -1,0 +1,106 @@
+---
+title: "Was tun? - Ein Essay"
+description: "Forschung und die Künstliche Intelligenz"
+author: "Lasse Rodeck"
+image: image.jpeg
+date: "10/17/2023"
+date-modified: "10/17/2023"
+listing: 
+  contents: posts
+  type: grid
+categories: [News, Essay, Machine Learning, AI, Forschung, Wissenschaftstheorie, Lehre, Qualitative Forschung]
+draft: false
+---
+
+# Einleitung
+
+Die Politikwissenschaft hat sich im Laufe der Jahre weiterentwickelt, um den sich ständig verändernden Anforderungen und Herausforderungen unserer globalisierten Welt gerecht zu werden. Traditionell geprägt von qualitativen Analysen und theoretischer Reflexion, stehen Politikwissenschaftler heute vor der dringenden Notwendigkeit, ihre Methoden und Ansätze zu modernisieren, um den wachsenden Datenmengen und der komplexen politischen Realität besser gerecht zu werden. In diesem Essay möchte ich die dringende Forderung nach einem stärker technisch getriebenen Ansatz in der Politikwissenschaft vorbringen und eine innovative Lösung präsentieren: die Einführung einer neuen Pipeline für qualitative Textverarbeitung. Diese technologische Weiterentwicklung verspricht nicht nur, die Effizienz und Präzision unserer Forschungsarbeit zu steigern, sondern auch neue Einblicke in die politische Landschaft zu ermöglichen, die bisher unzugänglich waren. Wir stehen an der Schwelle zu einer aufregenden Transformation in der Politikwissenschaft, und es ist an der Zeit, diesen Weg mit Entschlossenheit zu beschreiten. In diesem Essay werde ich die Gründe für diesen Paradigmenwechsel erörtern, die potenziellen Vorteile der vorgeschlagenen Textverarbeitungspipeline hervorheben und auf die ethischen und methodologischen Herausforderungen eingehen, die mit dieser neuen Ära der politikwissenschaftlichen Forschung einhergehen.
+
+# Ein Altmodischer Ansatz, der die Forschung lähmt
+
+Die gängige Praxis der qualitativen Textanalyse in der Politikwissenschaft, die sich auf manuelle Methoden und die Analyse einzelner Texte konzentriert, stellt zweifellos eine wichtige, aber zugleich veraltete Vorgehensweise dar. Forscherinnen und Forscher verbringen oft erhebliche Zeit damit, Texte von Hand zu durchforsten, um narrative Strukturen zu identifizieren und Stimmungen zu extrahieren. Diese Methode ist nicht nur zeitaufwendig, sondern hat auch eine begrenzte Reichweite und birgt eine Reihe von Problemen.
+
+## Zeitintensiv und ressourcenverschwendend:
+
+Die manuelle qualitative Textanalyse erfordert unverhältnismäßig viel Zeit und Ressourcen. Forscherinnen und Forscher müssen jede Zeile, jeden Abschnitt und jedes Wort in den Texten durchforsten, was zu einer Verlangsamung des Forschungsprozesses führt. Dieses zeitaufwendige Verfahren begrenzt die Anzahl der analysierten Texte erheblich und führt zu einer Verschwendung wertvoller Ressourcen.
+
+## Forschungslücken und begrenzte Datenabdeckung:
+
+Die manuelle Analyse einzelner Texte hinterlässt zwangsläufig Forschungslücken. Die Auswahl von Stichproben kann zu Verzerrungen führen und verhindern, dass wichtige Informationen und Trends übersehen werden. In der heutigen Ära, in der Politik und Gesellschaft von einer Fülle von Texten und Informationen geprägt sind, ist eine begrenzte Datenabdeckung ein erhebliches Problem. Diese Lücken führen zu unvollständigen und möglicherweise irreführenden Schlussfolgerungen.
+
+## Forscherbias und mangelnde Objektivität:
+
+Die manuelle qualitative Textanalyse ist anfällig für Forscherbias. Forscherinnen und Forscher können bewusst oder unbewusst Texte auswählen und interpretieren, die ihren eigenen Ansichten und Hypothesen entsprechen. Dies führt zu mangelnder Objektivität und beeinträchtigt die Validität der Forschungsergebnisse.
+
+## Veralteter Ansatz in einer digitalen Welt:
+
+Angesichts der rasanten Entwicklung von Technologien wie Machine Learning und Natural Language Processing ist die manuelle qualitative Textanalyse ein veralteter Ansatz, der sich der digitalen Revolution verschließt. In einer Zeit, in der große Mengen an Textdaten in Echtzeit verfügbar sind, sollten Forscherinnen und Forscher in der Politikwissenschaft auf fortschrittliche Technologien zurückgreifen, um die Forschung zu beschleunigen und zu verbessern.
+
+## Trennung von Lehre und Forschung: Ein Bildungsproblem
+
+Die Trennung von Lehre und Forschung ist ein weiteres Problem, das mit dem festgefahrenen Ansatz der manuellen qualitativen Textanalyse einhergeht. In vielen Fällen sind die Forscherinnen und Forscher auch Lehrende an Universitäten und Forschungseinrichtungen. Wenn die Forschung in der Politikwissenschaft sich dem technologischen Fortschritt verwehrt und an veralteten Methoden festhält, hat dies unmittelbare Auswirkungen auf die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern.
+
+Die Lehrenden übertragen ihre Methoden und Herangehensweisen an die Studierenden, was zur Perpetuierung veralteter Praktiken führt. Wenn die Studierenden in veralteten Methoden geschult werden, werden sie weniger gut auf die Herausforderungen der modernen politischen Realität vorbereitet. Dieser Mangel an Anpassungsfähigkeit und Technologiefähigkeiten kann zu einem erheblichen Bildungsdefizit führen und die zukünftige Generation von Politikwissenschaftlerinnen und -wissenschaftlern auf ein sich veränderndes Forschungsumfeld schlecht vorbereiten.
+
+Es ist daher von entscheidender Bedeutung, dass die Politikwissenschaft als Disziplin ihre Bildung und Forschung miteinander verknüpft und den Studierenden die neuesten Methoden und Technologien vermittelt. Nur so können wir sicherstellen, dass die nächste Generation von Politikwissenschaftlerinnen und -wissenschaftlern in der Lage ist, die komplexen politischen Herausforderungen unserer Zeit erfolgreich anzugehen. Die Modernisierung der qualitativen Textanalyse ist nicht nur eine Frage der Forschungseffizienz, sondern auch eine Frage der Qualität der politikwissenschaftlichen Bildung und Forschung.
+
+# Eine innovative Textverarbeitungspipeline für die Politikwissenschaft
+
+Um den Anforderungen der modernen Politikwissenschaft gerecht zu werden und eine effektivere Forschungsarbeit zu ermöglichen, schlage ich eine fortschrittliche Textverarbeitungspipeline vor, die von einem holistischen zu einem kleinteiligen Ansatz übergeht. Diese Pipeline integriert modernste Technologien und Methoden, um die Analyse von Textdaten zu optimieren.
+
+## Datensichtung und Bereinigung:
+
+Der erste Schritt in dieser neuen Pipeline besteht darin, vorhandene Textdaten zu sichten und von fehlerhaften, unvollständigen oder duplizierten Daten zu bereinigen. Die Qualität der Datenbasis ist von entscheidender Bedeutung, um präzise und verlässliche Forschungsergebnisse zu erzielen.
+
+## Berechnung relevanter Textmerkmale:
+
+Im nächsten Schritt werden bestimmte Werte berechnet, die für das Forschungsdesign von Bedeutung sind. Dazu gehören unter anderem die Bestimmung des Sentiments, die Ausprägung bestimmter Stimmungen und die Identifikation der Textart. Dieser automatisierte Prozess spart Zeit und gewährleistet konsistente Analysen.
+
+## Inhaltliche Klassifizierung mit LDA-Topic-Modellierung:
+
+Nach der Berechnung von Textmerkmalen werden die Texte inhaltlich klassifiziert. Hier kommt die LDA-Topic-Modellierung zum Einsatz, um thematische Muster und Trends in den Textdaten zu identifizieren. Dies ermöglicht eine strukturierte Gruppierung der Texte nach thematischen Kategorien.
+
+## Weitere Analyse auf thematischer Ebene:
+
+Die thematische Klassifizierung erlaubt es, tiefer in die Analyse einzusteigen. Forscherinnen und Forscher können die Texte innerhalb der identifizierten Themenbereiche erneut analysieren, um subtile Unterschiede und Entwicklungen zu erkennen.
+
+## Analyse auf Token-Ebene mit Token Classification:
+
+Eine vertiefte Analyse auf Token-Ebene, beispielsweise durch Part-of-Speech Tagging (POS-Tagging), ermöglicht die Identifizierung von Akteuren, Adjektiven und deren Verbindungen. Dies erlaubt, festzustellen, welche Akteure häufig positiv oder negativ erwähnt werden und welche Adjektive mit ihnen in Verbindung stehen. Zudem kann ermittelt werden, welche anderen Akteure in den Texten vorkommen.
+
+## Identifikation von größeren Narrativen und Stimmungen:
+
+Basierend auf den auf Token-Ebene gewonnenen Erkenntnissen können größere Narrative und Stimmungen ermittelt und analysiert werden. Diese tiefgehende Analyse ermöglicht es, politische Diskurse und Zusammenhänge umfassend zu verstehen.
+
+Diese innovative Textverarbeitungspipeline bietet eine umfassende Methode zur Analyse von Textdaten in der Politikwissenschaft. Sie ermöglicht nicht nur eine effizientere Forschungsarbeit, sondern trägt auch dazu bei, Forschungslücken zu reduzieren und ein besseres Verständnis der politischen Landschaft zu gewinnen. Dieser fortschrittliche Ansatz ist der Schlüssel, um die Politikwissenschaft für die Zukunft zu rüsten und die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern zu verbessern.
+
+```{r flow, echo=FALSE,message=FALSE}
+library(DiagrammeR)
+
+
+DiagrammeR::grViz("digraph{
+
+node [shape = rectangle, style = filled, fillcolor = Linen]
+node [fontname = 'Courier New', shape = rectangle, fontcolor = black, arrowhead = none]
+bgcolor = '#fdf5e6'
+
+'Datensichtung und Bereinigung' -> 'Berechnung relevanter Textmerkmale' -> 'LDA-Topic-Modellierung' -> 
+'Weitere Analyse auf thematischer Ebene' -> 'Analyse Token-Ebene' -> 'Identifikation größerer Narrativen und Stimmungen'
+
+}")
+
+```
+
+# Schlussfolgerung: Aufbruch in eine innovative Zukunft der Politikwissenschaft
+
+Die vorgeschlagene Textverarbeitungspipeline repräsentiert nicht nur eine effizientere Methode zur Analyse von Textdaten in der Politikwissenschaft, sondern auch einen Paradigmenwechsel hin zu einer moderneren und technologisch gestützten Forschungspraxis. Dieser Fortschritt ist umso notwendiger, wenn wir die Schwächen der alten Methoden berücksichtigen.
+
+Die traditionellen Ansätze in der qualitativen Textanalyse, die auf manueller Datenerhebung und einer begrenzten Stichprobenauswahl beruhen, hinterlassen mehr Forschungslücken, als sie schließen. Diese Methoden sind zeitaufwendig, anfällig für Forscherbias und begrenzen die Menge der analysierten Texte erheblich. Die manuelle qualitative Textanalyse fällt oft in die Falle der Verallgemeinerung und vernachlässigt relevante Informationen.
+
+In einer Ära, in der die politische Realität von einer Fülle von Texten und Informationen geprägt ist, müssen wir die Art und Weise, wie wir politische Daten analysieren, modernisieren. Die vorgeschlagene Pipeline ermöglicht es, diese Schwächen zu überwinden und eine effizientere, objektivere und zeitgemäße Forschungspraxis einzuführen.
+
+Darüber hinaus haben wir betont, dass Lehre und Forschung in der Politikwissenschaft nicht getrennt voneinander betrachtet werden sollten. Die Forschenden sind häufig auch Lehrende an Universitäten und Forschungseinrichtungen, und ihre Forschungsmethoden und -praktiken haben einen direkten Einfluss auf die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern. Die Modernisierung der Forschungsmethoden und -praktiken ist daher nicht nur eine Frage der Forschungseffizienz, sondern auch eine Frage der Qualität der politikwissenschaftlichen Bildung.
+
+Die enge Verknüpfung von Lehre und Forschung bietet die Möglichkeit, die Studierenden in modernen Forschungstechniken zu schulen und sie auf die Herausforderungen der politischen Realität vorzubereiten. Dieser integrierte Ansatz trägt dazu bei, die Politikwissenschaft für die Zukunft zu rüsten und die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern zu verbessern.
+
+Es ist an der Zeit, den Schritt in die Moderne zu wagen und sicherzustellen, dass die Politikwissenschaft für die Zukunft gerüstet ist. Diese Pipeline bietet eine Chance, die Qualität der Forschung zu steigern, die Verbindung von Lehre und Forschung zu vertiefen und gleichzeitig die nächste Generation von Politikwissenschaftlerinnen und -wissenschaftlern besser auszubilden, damit sie die komplexen politischen Herausforderungen unserer Zeit erfolgreich bewältigen können. Mit diesem innovativen Ansatz eröffnen sich neue Möglichkeiten, die politische Realität umfassender zu verstehen und die Politikwissenschaft auf ein neues Niveau der Exzellenz zu heben.

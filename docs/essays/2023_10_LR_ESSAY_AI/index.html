@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lasse Rodeck">
+<meta name="dcterms.date" content="2023-10-17">
+<meta name="description" content="Forschung und die Künstliche Intelligenz">
+
+<title>PolitikPulse - Was tun? - Ein Essay</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../Owl.jpeg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<script src="../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="../../site_libs/viz-1.8.2/viz.js"></script>
+<link href="../../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="../../site_libs/grViz-binding-1.0.10/grViz.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../rwds.css">
+<meta property="og:title" content="PolitikPulse - Was tun? - Ein Essay">
+<meta property="og:description" content="Forschung und die Künstliche Intelligenz">
+<meta property="og:image" content="https://politikpulse.net/essays/2023_10_LR_ESSAY_AI/image.jpeg">
+<meta property="og:site-name" content="PolitikPulse">
+<meta name="twitter:title" content="PolitikPulse - Was tun? - Ein Essay">
+<meta name="twitter:description" content="Forschung und die Künstliche Intelligenz">
+<meta name="twitter:image" content="https://politikpulse.net/essays/2023_10_LR_ESSAY_AI/image.jpeg">
+<meta name="twitter:site" content="@LasseRodeck">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../Owl.jpeg" alt="Politikwissenschaften im Fokus" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../studies/index.html" rel="" target="">
+ <span class="menu-text">Fallstudien</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../essays/index.html" rel="" target="">
+ <span class="menu-text">Essays und Ideen</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../opinions/index.html" rel="" target="">
+ <span class="menu-text">Meinungen</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-wer-wir-sind" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Wer wir sind</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-wer-wir-sind">    
+        <li>
+    <a class="dropdown-item" href="../../about.html" rel="" target="">
+ <span class="dropdown-text">Über Uns</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#einleitung" id="toc-einleitung" class="nav-link active" data-scroll-target="#einleitung">Einleitung</a></li>
+  <li><a href="#ein-altmodischer-ansatz-der-die-forschung-lähmt" id="toc-ein-altmodischer-ansatz-der-die-forschung-lähmt" class="nav-link" data-scroll-target="#ein-altmodischer-ansatz-der-die-forschung-lähmt"><strong>Ein Altmodischer Ansatz, der die Forschung lähmt</strong></a>
+  <ul class="collapse">
+  <li><a href="#zeitintensiv-und-ressourcenverschwendend" id="toc-zeitintensiv-und-ressourcenverschwendend" class="nav-link" data-scroll-target="#zeitintensiv-und-ressourcenverschwendend"><strong>1. Zeitintensiv und ressourcenverschwendend:</strong></a></li>
+  <li><a href="#forschungslücken-und-begrenzte-datenabdeckung" id="toc-forschungslücken-und-begrenzte-datenabdeckung" class="nav-link" data-scroll-target="#forschungslücken-und-begrenzte-datenabdeckung"><strong>Forschungslücken und begrenzte Datenabdeckung:</strong></a></li>
+  <li><a href="#forscherbias-und-mangelnde-objektivität" id="toc-forscherbias-und-mangelnde-objektivität" class="nav-link" data-scroll-target="#forscherbias-und-mangelnde-objektivität"><strong>Forscherbias und mangelnde Objektivität:</strong></a></li>
+  <li><a href="#veralteter-ansatz-in-einer-digitalen-welt" id="toc-veralteter-ansatz-in-einer-digitalen-welt" class="nav-link" data-scroll-target="#veralteter-ansatz-in-einer-digitalen-welt"><strong>Veralteter Ansatz in einer digitalen Welt:</strong></a></li>
+  <li><a href="#trennung-von-lehre-und-forschung-ein-bildungsproblem" id="toc-trennung-von-lehre-und-forschung-ein-bildungsproblem" class="nav-link" data-scroll-target="#trennung-von-lehre-und-forschung-ein-bildungsproblem"><strong>Trennung von Lehre und Forschung: Ein Bildungsproblem</strong></a></li>
+  </ul></li>
+  <li><a href="#eine-innovative-textverarbeitungspipeline-für-die-politikwissenschaft" id="toc-eine-innovative-textverarbeitungspipeline-für-die-politikwissenschaft" class="nav-link" data-scroll-target="#eine-innovative-textverarbeitungspipeline-für-die-politikwissenschaft"><strong>Eine innovative Textverarbeitungspipeline für die Politikwissenschaft</strong></a>
+  <ul class="collapse">
+  <li><a href="#datensichtung-und-bereinigung" id="toc-datensichtung-und-bereinigung" class="nav-link" data-scroll-target="#datensichtung-und-bereinigung"><strong>Datensichtung und Bereinigung:</strong></a></li>
+  <li><a href="#berechnung-relevanter-textmerkmale" id="toc-berechnung-relevanter-textmerkmale" class="nav-link" data-scroll-target="#berechnung-relevanter-textmerkmale"><strong>Berechnung relevanter Textmerkmale:</strong></a></li>
+  <li><a href="#inhaltliche-klassifizierung-mit-lda-topic-modellierung" id="toc-inhaltliche-klassifizierung-mit-lda-topic-modellierung" class="nav-link" data-scroll-target="#inhaltliche-klassifizierung-mit-lda-topic-modellierung"><strong>Inhaltliche Klassifizierung mit LDA-Topic-Modellierung:</strong></a></li>
+  <li><a href="#weitere-analyse-auf-thematischer-ebene" id="toc-weitere-analyse-auf-thematischer-ebene" class="nav-link" data-scroll-target="#weitere-analyse-auf-thematischer-ebene"><strong>Weitere Analyse auf thematischer Ebene:</strong></a></li>
+  <li><a href="#analyse-auf-token-ebene-mit-token-classification" id="toc-analyse-auf-token-ebene-mit-token-classification" class="nav-link" data-scroll-target="#analyse-auf-token-ebene-mit-token-classification"><strong>Analyse auf Token-Ebene mit Token Classification:</strong></a></li>
+  <li><a href="#identifikation-von-größeren-narrativen-und-stimmungen" id="toc-identifikation-von-größeren-narrativen-und-stimmungen" class="nav-link" data-scroll-target="#identifikation-von-größeren-narrativen-und-stimmungen"><strong>Identifikation von größeren Narrativen und Stimmungen:</strong></a></li>
+  </ul></li>
+  <li><a href="#schlussfolgerung-aufbruch-in-eine-innovative-zukunft-der-politikwissenschaft" id="toc-schlussfolgerung-aufbruch-in-eine-innovative-zukunft-der-politikwissenschaft" class="nav-link" data-scroll-target="#schlussfolgerung-aufbruch-in-eine-innovative-zukunft-der-politikwissenschaft">** Schlussfolgerung: Aufbruch in eine innovative Zukunft der Politikwissenschaft**</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://lrodeck.github.io/PolitikPulse/edit/main/essays/2023_10_LR_ESSAY_AI/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://lrodeck.github.io/PolitikPulse/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Was tun? - Ein Essay</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">news</div>
+    <div class="quarto-category">analysis</div>
+    <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Kommunikationstheorie</div>
+    <div class="quarto-category">Medien</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Forschung und die Künstliche Intelligenz
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lasse Rodeck </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 17, 2023</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">October 17, 2023</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="einleitung" class="level1">
+<h1>Einleitung</h1>
+<p>Die Politikwissenschaft hat sich im Laufe der Jahre weiterentwickelt, um den sich ständig verändernden Anforderungen und Herausforderungen unserer globalisierten Welt gerecht zu werden. Traditionell geprägt von qualitativen Analysen und theoretischer Reflexion, stehen Politikwissenschaftler heute vor der dringenden Notwendigkeit, ihre Methoden und Ansätze zu modernisieren, um den wachsenden Datenmengen und der komplexen politischen Realität besser gerecht zu werden. In diesem Essay möchte ich die dringende Forderung nach einem stärker technisch getriebenen Ansatz in der Politikwissenschaft vorbringen und eine innovative Lösung präsentieren: die Einführung einer neuen Pipeline für qualitative Textverarbeitung. Diese technologische Weiterentwicklung verspricht nicht nur, die Effizienz und Präzision unserer Forschungsarbeit zu steigern, sondern auch neue Einblicke in die politische Landschaft zu ermöglichen, die bisher unzugänglich waren. Wir stehen an der Schwelle zu einer aufregenden Transformation in der Politikwissenschaft, und es ist an der Zeit, diesen Weg mit Entschlossenheit zu beschreiten. In diesem Essay werde ich die Gründe für diesen Paradigmenwechsel erörtern, die potenziellen Vorteile der vorgeschlagenen Textverarbeitungspipeline hervorheben und auf die ethischen und methodologischen Herausforderungen eingehen, die mit dieser neuen Ära der politikwissenschaftlichen Forschung einhergehen.</p>
+</section>
+<section id="ein-altmodischer-ansatz-der-die-forschung-lähmt" class="level1">
+<h1><strong>Ein Altmodischer Ansatz, der die Forschung lähmt</strong></h1>
+<p>Die gängige Praxis der qualitativen Textanalyse in der Politikwissenschaft, die sich auf manuelle Methoden und die Analyse einzelner Texte konzentriert, stellt zweifellos eine wichtige, aber zugleich veraltete Vorgehensweise dar. Forscherinnen und Forscher verbringen oft erhebliche Zeit damit, Texte von Hand zu durchforsten, um narrative Strukturen zu identifizieren und Stimmungen zu extrahieren. Diese Methode ist nicht nur zeitaufwendig, sondern hat auch eine begrenzte Reichweite und birgt eine Reihe von Problemen.</p>
+<section id="zeitintensiv-und-ressourcenverschwendend" class="level2">
+<h2 class="anchored" data-anchor-id="zeitintensiv-und-ressourcenverschwendend"><strong>1. Zeitintensiv und ressourcenverschwendend:</strong></h2>
+<p>Die manuelle qualitative Textanalyse erfordert unverhältnismäßig viel Zeit und Ressourcen. Forscherinnen und Forscher müssen jede Zeile, jeden Abschnitt und jedes Wort in den Texten durchforsten, was zu einer Verlangsamung des Forschungsprozesses führt. Dieses zeitaufwendige Verfahren begrenzt die Anzahl der analysierten Texte erheblich und führt zu einer Verschwendung wertvoller Ressourcen.</p>
+</section>
+<section id="forschungslücken-und-begrenzte-datenabdeckung" class="level2">
+<h2 class="anchored" data-anchor-id="forschungslücken-und-begrenzte-datenabdeckung"><strong>Forschungslücken und begrenzte Datenabdeckung:</strong></h2>
+<p>Die manuelle Analyse einzelner Texte hinterlässt zwangsläufig Forschungslücken. Die Auswahl von Stichproben kann zu Verzerrungen führen und verhindern, dass wichtige Informationen und Trends übersehen werden. In der heutigen Ära, in der Politik und Gesellschaft von einer Fülle von Texten und Informationen geprägt sind, ist eine begrenzte Datenabdeckung ein erhebliches Problem. Diese Lücken führen zu unvollständigen und möglicherweise irreführenden Schlussfolgerungen.</p>
+</section>
+<section id="forscherbias-und-mangelnde-objektivität" class="level2">
+<h2 class="anchored" data-anchor-id="forscherbias-und-mangelnde-objektivität"><strong>Forscherbias und mangelnde Objektivität:</strong></h2>
+<p>Die manuelle qualitative Textanalyse ist anfällig für Forscherbias. Forscherinnen und Forscher können bewusst oder unbewusst Texte auswählen und interpretieren, die ihren eigenen Ansichten und Hypothesen entsprechen. Dies führt zu mangelnder Objektivität und beeinträchtigt die Validität der Forschungsergebnisse.</p>
+</section>
+<section id="veralteter-ansatz-in-einer-digitalen-welt" class="level2">
+<h2 class="anchored" data-anchor-id="veralteter-ansatz-in-einer-digitalen-welt"><strong>Veralteter Ansatz in einer digitalen Welt:</strong></h2>
+<p>Angesichts der rasanten Entwicklung von Technologien wie Machine Learning und Natural Language Processing ist die manuelle qualitative Textanalyse ein veralteter Ansatz, der sich der digitalen Revolution verschließt. In einer Zeit, in der große Mengen an Textdaten in Echtzeit verfügbar sind, sollten Forscherinnen und Forscher in der Politikwissenschaft auf fortschrittliche Technologien zurückgreifen, um die Forschung zu beschleunigen und zu verbessern.</p>
+</section>
+<section id="trennung-von-lehre-und-forschung-ein-bildungsproblem" class="level2">
+<h2 class="anchored" data-anchor-id="trennung-von-lehre-und-forschung-ein-bildungsproblem"><strong>Trennung von Lehre und Forschung: Ein Bildungsproblem</strong></h2>
+<p>Die Trennung von Lehre und Forschung ist ein weiteres Problem, das mit dem festgefahrenen Ansatz der manuellen qualitativen Textanalyse einhergeht. In vielen Fällen sind die Forscherinnen und Forscher auch Lehrende an Universitäten und Forschungseinrichtungen. Wenn die Forschung in der Politikwissenschaft sich dem technologischen Fortschritt verwehrt und an veralteten Methoden festhält, hat dies unmittelbare Auswirkungen auf die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern.</p>
+<p>Die Lehrenden übertragen ihre Methoden und Herangehensweisen an die Studierenden, was zur Perpetuierung veralteter Praktiken führt. Wenn die Studierenden in veralteten Methoden geschult werden, werden sie weniger gut auf die Herausforderungen der modernen politischen Realität vorbereitet. Dieser Mangel an Anpassungsfähigkeit und Technologiefähigkeiten kann zu einem erheblichen Bildungsdefizit führen und die zukünftige Generation von Politikwissenschaftlerinnen und -wissenschaftlern auf ein sich veränderndes Forschungsumfeld schlecht vorbereiten.</p>
+<p>Es ist daher von entscheidender Bedeutung, dass die Politikwissenschaft als Disziplin ihre Bildung und Forschung miteinander verknüpft und den Studierenden die neuesten Methoden und Technologien vermittelt. Nur so können wir sicherstellen, dass die nächste Generation von Politikwissenschaftlerinnen und -wissenschaftlern in der Lage ist, die komplexen politischen Herausforderungen unserer Zeit erfolgreich anzugehen. Die Modernisierung der qualitativen Textanalyse ist nicht nur eine Frage der Forschungseffizienz, sondern auch eine Frage der Qualität der politikwissenschaftlichen Bildung und Forschung.</p>
+</section>
+</section>
+<section id="eine-innovative-textverarbeitungspipeline-für-die-politikwissenschaft" class="level1">
+<h1><strong>Eine innovative Textverarbeitungspipeline für die Politikwissenschaft</strong></h1>
+<p>Um den Anforderungen der modernen Politikwissenschaft gerecht zu werden und eine effektivere Forschungsarbeit zu ermöglichen, schlage ich eine fortschrittliche Textverarbeitungspipeline vor, die von einem holistischen zu einem kleinteiligen Ansatz übergeht. Diese Pipeline integriert modernste Technologien und Methoden, um die Analyse von Textdaten zu optimieren.</p>
+<section id="datensichtung-und-bereinigung" class="level2">
+<h2 class="anchored" data-anchor-id="datensichtung-und-bereinigung"><strong>Datensichtung und Bereinigung:</strong></h2>
+<p>Der erste Schritt in dieser neuen Pipeline besteht darin, vorhandene Textdaten zu sichten und von fehlerhaften, unvollständigen oder duplizierten Daten zu bereinigen. Die Qualität der Datenbasis ist von entscheidender Bedeutung, um präzise und verlässliche Forschungsergebnisse zu erzielen.</p>
+</section>
+<section id="berechnung-relevanter-textmerkmale" class="level2">
+<h2 class="anchored" data-anchor-id="berechnung-relevanter-textmerkmale"><strong>Berechnung relevanter Textmerkmale:</strong></h2>
+<p>Im nächsten Schritt werden bestimmte Werte berechnet, die für das Forschungsdesign von Bedeutung sind. Dazu gehören unter anderem die Bestimmung des Sentiments, die Ausprägung bestimmter Stimmungen und die Identifikation der Textart. Dieser automatisierte Prozess spart Zeit und gewährleistet konsistente Analysen.</p>
+</section>
+<section id="inhaltliche-klassifizierung-mit-lda-topic-modellierung" class="level2">
+<h2 class="anchored" data-anchor-id="inhaltliche-klassifizierung-mit-lda-topic-modellierung"><strong>Inhaltliche Klassifizierung mit LDA-Topic-Modellierung:</strong></h2>
+<p>Nach der Berechnung von Textmerkmalen werden die Texte inhaltlich klassifiziert. Hier kommt die LDA-Topic-Modellierung zum Einsatz, um thematische Muster und Trends in den Textdaten zu identifizieren. Dies ermöglicht eine strukturierte Gruppierung der Texte nach thematischen Kategorien.</p>
+</section>
+<section id="weitere-analyse-auf-thematischer-ebene" class="level2">
+<h2 class="anchored" data-anchor-id="weitere-analyse-auf-thematischer-ebene"><strong>Weitere Analyse auf thematischer Ebene:</strong></h2>
+<p>Die thematische Klassifizierung erlaubt es, tiefer in die Analyse einzusteigen. Forscherinnen und Forscher können die Texte innerhalb der identifizierten Themenbereiche erneut analysieren, um subtile Unterschiede und Entwicklungen zu erkennen.</p>
+</section>
+<section id="analyse-auf-token-ebene-mit-token-classification" class="level2">
+<h2 class="anchored" data-anchor-id="analyse-auf-token-ebene-mit-token-classification"><strong>Analyse auf Token-Ebene mit Token Classification:</strong></h2>
+<p>Eine vertiefte Analyse auf Token-Ebene, beispielsweise durch Part-of-Speech Tagging (POS-Tagging), ermöglicht die Identifizierung von Akteuren, Adjektiven und deren Verbindungen. Dies erlaubt, festzustellen, welche Akteure häufig positiv oder negativ erwähnt werden und welche Adjektive mit ihnen in Verbindung stehen. Zudem kann ermittelt werden, welche anderen Akteure in den Texten vorkommen.</p>
+</section>
+<section id="identifikation-von-größeren-narrativen-und-stimmungen" class="level2">
+<h2 class="anchored" data-anchor-id="identifikation-von-größeren-narrativen-und-stimmungen"><strong>Identifikation von größeren Narrativen und Stimmungen:</strong></h2>
+<p>Basierend auf den auf Token-Ebene gewonnenen Erkenntnissen können größere Narrative und Stimmungen ermittelt und analysiert werden. Diese tiefgehende Analyse ermöglicht es, politische Diskurse und Zusammenhänge umfassend zu verstehen.</p>
+<p>Diese innovative Textverarbeitungspipeline bietet eine umfassende Methode zur Analyse von Textdaten in der Politikwissenschaft. Sie ermöglicht nicht nur eine effizientere Forschungsarbeit, sondern trägt auch dazu bei, Forschungslücken zu reduzieren und ein besseres Verständnis der politischen Landschaft zu gewinnen. Dieser fortschrittliche Ansatz ist der Schlüssel, um die Politikwissenschaft für die Zukunft zu rüsten und die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern zu verbessern.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6ca1272d50158b2550dc" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6ca1272d50158b2550dc">{"x":{"diagram":"digraph{\n\nnode [shape = rectangle, style = filled, fillcolor = Linen]\nnode [fontname = \"Courier New\", shape = rectangle, fontcolor = black, arrowhead = none]\nbgcolor = \"#fdf5e6\"\n\n\"Datensichtung und Bereinigung\" -> \"Berechnung relevanter Textmerkmale\" -> \"LDA-Topic-Modellierung\" -> \n\"Weitere Analyse auf thematischer Ebene\" -> \"Analyse Token-Ebene\" -> \"Identifikation größerer Narrativen und Stimmungen\"\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="schlussfolgerung-aufbruch-in-eine-innovative-zukunft-der-politikwissenschaft" class="level1">
+<h1>** Schlussfolgerung: Aufbruch in eine innovative Zukunft der Politikwissenschaft**</h1>
+<p>Die vorgeschlagene Textverarbeitungspipeline repräsentiert nicht nur eine effizientere Methode zur Analyse von Textdaten in der Politikwissenschaft, sondern auch einen Paradigmenwechsel hin zu einer moderneren und technologisch gestützten Forschungspraxis. Dieser Fortschritt ist umso notwendiger, wenn wir die Schwächen der alten Methoden berücksichtigen.</p>
+<p>Die traditionellen Ansätze in der qualitativen Textanalyse, die auf manueller Datenerhebung und einer begrenzten Stichprobenauswahl beruhen, hinterlassen mehr Forschungslücken, als sie schließen. Diese Methoden sind zeitaufwendig, anfällig für Forscherbias und begrenzen die Menge der analysierten Texte erheblich. Die manuelle qualitative Textanalyse fällt oft in die Falle der Verallgemeinerung und vernachlässigt relevante Informationen.</p>
+<p>In einer Ära, in der die politische Realität von einer Fülle von Texten und Informationen geprägt ist, müssen wir die Art und Weise, wie wir politische Daten analysieren, modernisieren. Die vorgeschlagene Pipeline ermöglicht es, diese Schwächen zu überwinden und eine effizientere, objektivere und zeitgemäße Forschungspraxis einzuführen.</p>
+<p>Darüber hinaus haben wir betont, dass Lehre und Forschung in der Politikwissenschaft nicht getrennt voneinander betrachtet werden sollten. Die Forschenden sind häufig auch Lehrende an Universitäten und Forschungseinrichtungen, und ihre Forschungsmethoden und -praktiken haben einen direkten Einfluss auf die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern. Die Modernisierung der Forschungsmethoden und -praktiken ist daher nicht nur eine Frage der Forschungseffizienz, sondern auch eine Frage der Qualität der politikwissenschaftlichen Bildung.</p>
+<p>Die enge Verknüpfung von Lehre und Forschung bietet die Möglichkeit, die Studierenden in modernen Forschungstechniken zu schulen und sie auf die Herausforderungen der politischen Realität vorzubereiten. Dieser integrierte Ansatz trägt dazu bei, die Politikwissenschaft für die Zukunft zu rüsten und die Bildung der nächsten Generation von Politikwissenschaftlerinnen und -wissenschaftlern zu verbessern.</p>
+<p>Es ist an der Zeit, den Schritt in die Moderne zu wagen und sicherzustellen, dass die Politikwissenschaft für die Zukunft gerüstet ist. Diese Pipeline bietet eine Chance, die Qualität der Forschung zu steigern, die Verbindung von Lehre und Forschung zu vertiefen und gleichzeitig die nächste Generation von Politikwissenschaftlerinnen und -wissenschaftlern besser auszubilden, damit sie die komplexen politischen Herausforderungen unserer Zeit erfolgreich bewältigen können. Mit diesem innovativen Ansatz eröffnen sich neue Möglichkeiten, die politische Realität umfassender zu verstehen und die Politikwissenschaft auf ein neues Niveau der Exzellenz zu heben.</p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lrodeck">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/LasseRodeck">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lasse-rodeck-84801b22b/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

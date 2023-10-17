@@ -9,7 +9,7 @@ bibliography: references.bib
 listing: 
   contents: posts
   type: grid
-categories: [news, analysis, Machine Learning, AI, Kommunikationstheorie, Medien]
+categories: [News, Analysis, Machine Learning, AI, Kommunikationstheorie, Medien]
 draft: false
 ---
 
