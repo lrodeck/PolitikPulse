@@ -1,12 +1,12 @@
 {
-    "id": "270D3EB6",
-    "path": "~/R Projects/PolitikPulse/index.qmd",
-    "project_path": "index.qmd",
+    "id": "619335C3",
+    "path": "~/R Projects/PolitikPulse/essays/2023_10_LR_ESSAY_AI/index.qmd",
+    "project_path": "essays/2023_10_LR_ESSAY_AI/index.qmd",
     "type": "quarto_markdown",
-    "hash": "2014458225",
+    "hash": "3132758026",
     "contents": "",
     "dirty": false,
-    "created": 1697569226073.0,
+    "created": 1697569409647.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
@@ -14,18 +14,18 @@
         "rmdVisualWrapConfigured": "true",
         "source_window_id": "",
         "Source": "Source",
-        "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "497:746",
+        "rmdVisualModeLocation": "9418:3571",
         "docOutlineVisible": "1",
-        "cursorPosition": "16,20",
-        "scrollLine": "18"
+        "rmdVisualCollapsedChunks": "",
+        "cursorPosition": "93,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1697557348,
+    "lastKnownWriteTime": 1697569423,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1697557348,
+    "last_content_update": 1697569423739,
     "read_only": false,
     "read_only_alternatives": []
 }
