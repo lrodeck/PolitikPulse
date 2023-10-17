@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "f8a22097"
+  },
+  "about.qmd": {
+    "about.html": "0f682e31"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "f693659f"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "2ac50074"
+  },
+  "posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/index.qmd": {
+    "index.html": "a6ee823c"
+  },
+  "posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/index.en.Rmd": {
+    "index.en.html": "174919b4"
+  },
+  "posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.qmd": {
+    "med_zus_index.html": "4ad836cf"
+  },
+  "posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.en.Rmd": {
+    "med_zus_index.en.html": "ee23ddae"
+  }
+}

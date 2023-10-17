@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lasse Rodeck">
+<meta name="description" content="Wie uns Textverarbeitungsalgorithmen eine Neue Welt eröffnen">
+
+<title>PolitikPuls - Medien und Politische Kommunikation im Fokus</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="../../site_libs/pymjs-1.3.2/pym.v1.js"></script>
+<script src="../../site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">PolitikPuls</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">Über Uns</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Medien und Politische Kommunikation im Fokus</h1>
+                  <div>
+        <div class="description">
+          Wie uns Textverarbeitungsalgorithmen eine Neue Welt eröffnen
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Daten und Fakten</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Lasse Rodeck </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Invalid Date</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#einleitung" id="toc-einleitung" class="nav-link active" data-scroll-target="#einleitung">Einleitung</a></li>
+  <li><a href="#theorie-literatur" id="toc-theorie-literatur" class="nav-link" data-scroll-target="#theorie-literatur">Theorie &amp; Literatur</a>
+  <ul class="collapse">
+  <li><a href="#leitmedien" id="toc-leitmedien" class="nav-link" data-scroll-target="#leitmedien">Leitmedien</a></li>
+  <li><a href="#die-medien-und-die-flüchtlingskrise" id="toc-die-medien-und-die-flüchtlingskrise" class="nav-link" data-scroll-target="#die-medien-und-die-flüchtlingskrise">Die Medien und die Flüchtlingskrise</a></li>
+  <li><a href="#agenda-setting" id="toc-agenda-setting" class="nav-link" data-scroll-target="#agenda-setting">Agenda Setting</a></li>
+  <li><a href="#recognition-theorie" id="toc-recognition-theorie" class="nav-link" data-scroll-target="#recognition-theorie">Recognition Theorie</a>
+  <ul class="collapse">
+  <li><a href="#aspekte-der-recognition-theorie" id="toc-aspekte-der-recognition-theorie" class="nav-link" data-scroll-target="#aspekte-der-recognition-theorie">Aspekte der Recognition Theorie</a></li>
+  <li><a href="#fazit" id="toc-fazit" class="nav-link" data-scroll-target="#fazit">Fazit</a></li>
+  </ul></li>
+  <li><a href="#large-language-models-in-der-politikwissenschaft" id="toc-large-language-models-in-der-politikwissenschaft" class="nav-link" data-scroll-target="#large-language-models-in-der-politikwissenschaft">Large Language Models in der Politikwissenschaft</a>
+  <ul class="collapse">
+  <li><a href="#literature-überblick" id="toc-literature-überblick" class="nav-link" data-scroll-target="#literature-überblick">Literature Überblick</a></li>
+  <li><a href="#fazit-1" id="toc-fazit-1" class="nav-link" data-scroll-target="#fazit-1">Fazit</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#methodik" id="toc-methodik" class="nav-link" data-scroll-target="#methodik">Methodik</a>
+  <ul class="collapse">
+  <li><a href="#sentiment-analyse" id="toc-sentiment-analyse" class="nav-link" data-scroll-target="#sentiment-analyse">Sentiment Analyse</a></li>
+  <li><a href="#lda" id="toc-lda" class="nav-link" data-scroll-target="#lda">LDA</a>
+  <ul class="collapse">
+  <li><a href="#webscraping" id="toc-webscraping" class="nav-link" data-scroll-target="#webscraping"><strong>Webscraping</strong></a></li>
+  </ul></li>
+  <li><a href="#auswahl-der-zeitungen" id="toc-auswahl-der-zeitungen" class="nav-link" data-scroll-target="#auswahl-der-zeitungen">Auswahl der Zeitungen</a></li>
+  </ul></li>
+  <li><a href="#ergebnisse" id="toc-ergebnisse" class="nav-link" data-scroll-target="#ergebnisse">Ergebnisse</a>
+  <ul class="collapse">
+  <li><a href="#datenbasis" id="toc-datenbasis" class="nav-link" data-scroll-target="#datenbasis">Datenbasis</a></li>
+  <li><a href="#sentiment-analyse-1" id="toc-sentiment-analyse-1" class="nav-link" data-scroll-target="#sentiment-analyse-1">Sentiment Analyse</a></li>
+  <li><a href="#topic-modelling-lda" id="toc-topic-modelling-lda" class="nav-link" data-scroll-target="#topic-modelling-lda">Topic Modelling (LDA)</a></li>
+  <li><a href="#quantitative-narrativ-erfassung" id="toc-quantitative-narrativ-erfassung" class="nav-link" data-scroll-target="#quantitative-narrativ-erfassung">Quantitative Narrativ Erfassung</a>
+  <ul class="collapse">
+  <li><a href="#verbundene-akteure-und-orte" id="toc-verbundene-akteure-und-orte" class="nav-link" data-scroll-target="#verbundene-akteure-und-orte">Verbundene Akteure und Orte</a></li>
+  <li><a href="#verbundene-akteure-und-verben" id="toc-verbundene-akteure-und-verben" class="nav-link" data-scroll-target="#verbundene-akteure-und-verben">Verbundene Akteure und Verben</a></li>
+  <li><a href="#verbundene-akteure-und-adjektive" id="toc-verbundene-akteure-und-adjektive" class="nav-link" data-scroll-target="#verbundene-akteure-und-adjektive">Verbundene Akteure und Adjektive</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#fazit-2" id="toc-fazit-2" class="nav-link" data-scroll-target="#fazit-2">Fazit</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="einleitung" class="level1">
+<h1>Einleitung</h1>
+<p>Die Flüchtlingskrise von 2015/2016 stellte Deutschland vor eine der größten gesellschaftlichen Herausforderungen der jüngeren Geschichte. In dieser Zeit wurden zwei besonders bedeutende Ereignisse medial intensiv diskutiert: Angela Merkels wegweisende „Wir schaffen das”-Rede am 31. August 2015 und die Vorfälle in der Silvesternacht 2015/2016. Die Berichterstattung über diese Ereignisse in den Medien hatte einen erheblichen Einfluss auf die öffentliche Meinung und die Wahrnehmung von Flüchtlingen in Deutschland.</p>
+<p>Diese Arbeit widmet sich der Analyse der Entwicklung des Sentiments in der Berichterstattung über Flüchtlinge in Deutschland im Kontext der oben genannten Ereignisse. Dabei liegt der Fokus auf einem Vergleich der Artikelarchive zweier prominenter Online-Zeitungen: Bild Online und Spiegel Online (SPON). Die Forschungsfrage dieser Hausarbeit lautet: „<em>Wie hat sich das Sentiment der untersuchten Veröffentlichungen im untersuchten Zeitraum verändert?“</em> Ich stelle hier zu die Hypothese auf, dass ein Abfall der Stimmung der Artikel von Sommer 2015 bis Frühjahr 2016 beobachtet werden kann. Dies würde das von <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> beschriebene Phänomen bestätigen.</p>
+<p><span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> analysierten bereits Ton und Inhalt des gleichen Zeitraums und kamen zu dem Schluss, dass Leitmedien vor allem Aussagen staatlicher und politischer Akteure als Quelle nahmen. Ihre Studie „ergab, dass in der Kategorie der relevanten Akteure und Sprecher zwei von drei Nennungen zur institutionellen Politik zählen” (Ebd. S. 133). Diese Leitmedien werden dabei unter dem Theorem der Agenda Setting betrachtet. Da diese Hausarbeit ein ähnliches Ziel verfolgt wie <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span>, werde ich mich ebenfalls auf dieses Theorem beziehen. Diese Arbeit versteht Leitmedien dabei als Meinungsmacher und betrachtet den Verlauf des Sentiments der Berichterstattung als relevanter Einfluss auf den öffentlichen Diskurs.</p>
+<p>Um das Sentiment in den Artikeln zu berechnen, wird ein Natural Language AI Model eingesetzt. Dieses moderne Analysewerkzeug ermöglicht eine schnelle, automatisierte Sentimentanalyse großer Textmengen. Es kann die positiven, neutralen und negativen Tendenzen in den Texten erkennen und somit eine quantitative Basis für die Untersuchung des Sentiments liefern. Da sich die Flüchtlingskrise 2015 facettenreich ausdrückt, wird zur Differenzierung der Ergebnisse eine Clusterung der Texte vorgenommen, wodurch diese in wenige verschiedene Themen eingeteilt werden sollen. Dadurch lassen sich Veränderungen in bestimmten Bereichen der Berichterstattung leichter aufzeigen.</p>
+<p>Die Verwendung dieses AI-Modells bietet mehrere Vorteile. 1) ermöglicht es eine effiziente und schnelle Analyse einer großen Anzahl von Artikeln, was bei manueller Analyse zeitaufwändig und unpraktisch wäre. 2) wird durch die maschinelle Verarbeitung ein reproduzierbarer Ansatz gewährleistet, da der Einfluss menschlicher Vorurteile und Sozialisierung minimiert werden. 3) können durch die computergestützte Analyse auch subtile Unterschiede im Sentiment erfasst werden, die für das Gesamtbild der medialen Berichterstattung relevant sein können.</p>
+<p>Im weiteren Verlauf dieser Hausarbeit werden die Ergebnisse der Sentimentanalyse diskutiert, um Einblicke in die mediale Reflexion der Flüchtlingskrise und die Rolle der Medien bei der Gestaltung der öffentlichen Meinung zu gewinnen. Darüber hinaus werden mögliche Einflussfaktoren auf das Sentiment und Unterschiede in der Berichterstattung zwischen den beiden Zeitungen beleuchtet. Ziel ist es, ein umfassendes Bild der Sentimententwicklung in der Berichterstattung über Flüchtlinge in Deutschland zu zeichnen und deren Bedeutung für die Gesellschaft zu reflektieren.</p>
+</section>
+<section id="theorie-literatur" class="level1">
+<h1>Theorie &amp; Literatur</h1>
+<section id="leitmedien" class="level2">
+<h2 class="anchored" data-anchor-id="leitmedien">Leitmedien</h2>
+<p>Es bietet sich an, mit einer Definition für diesen, so viel sei verraten, noch häufig zu nennenden Begriff anzufangen. Häufig benutzt, und doch selten präzise definiert. <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> scheinen den Begriff vor allem Synonym für Zeitung mit großer Auflage und überregionalem Fokus wie Süddeutsche Zeitung, Frankfurter Allgemeine Zeitung und Die Welt (vgl. Ebd. S. 10) zu benutzen, jedoch bleiben sie eine genaue Definition schuldig.</p>
+<p><span class="citation" data-cites="jarren2011">Jarren and Vogel (<a href="#ref-jarren2011" role="doc-biblioref">2011</a>)</span> hingegen stellen uns eine Definition zur Verfügung, die auch mit dem Verständnis anderer Beiträge wie <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> oder <span class="citation" data-cites="entman2003">Robert M. Entman (<a href="#ref-entman2003" role="doc-biblioref">2003</a>)</span> vereinbar ist.</p>
+<blockquote class="blockquote">
+<p><em>“Leitmedien besitzen also vor allem dann ein grosses Wirkungspotenzial, weil und wenn sie die Eliten in Politik, Wirtschaft und Kultur erreichen und dadurch Entscheidungen mit weit reichenden Konsequenzen beeinflussen können oder könnten: Was die führenden Medien aufgreifen, wird auch zum Thema der zuständigen Eliten. Leitmedien sind hier als Meinungsführermedien anzusehen”</em></p>
+<p><span class="citation" data-cites="jarren2011">Jarren and Vogel (<a href="#ref-jarren2011" role="doc-biblioref">2011</a>)</span></p>
+</blockquote>
+</section>
+<section id="die-medien-und-die-flüchtlingskrise" class="level2">
+<h2 class="anchored" data-anchor-id="die-medien-und-die-flüchtlingskrise">Die Medien und die Flüchtlingskrise</h2>
+<p><span class="citation" data-cites="Birkner2020Der">Birkner et al. (<a href="#ref-Birkner2020Der" role="doc-biblioref">2020</a>)</span> beschreiben zu Beginn der Flüchtlingskrise 2015 ein eher harmonisches Bild der deutschen Gesellschaft. Die Medien hätten zu Beginn vor allem positiv über das Thema berichtet. Gleichermaßen sei auch die generelle gesellschaftliche Stimmung positiv gewesen (Ebd. S. 52). Die BILD habe z. B. mit ihrer Aktion ‘Wir Helfen’ geworben und alles in allem sei der Begriff ‘Willkommenskultur’ viel beworben <span class="citation" data-cites="haller2017fluchtlingskrise">Birkner et al. (<a href="#ref-Birkner2020Der" role="doc-biblioref">2020</a>)</span>.</p>
+<p><span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> kommt zu dem Schluss, dass in Leitmedien häufig ausschließlich positiv berichtet wurde und Positionen der politischen Eliten direkt oftmals unkritisch übernommen worden seien. Zwar sei die Stimmung generell postiv gewesen (vgl. <span class="citation" data-cites="Birkner2020Der">Birkner et al. (<a href="#ref-Birkner2020Der" role="doc-biblioref">2020</a>)</span> S.52) allerdings habe diese unkritische Berichterstattung auch in einigen Teilen der Öffentlichkeit zur Anschauung, „der deutsche Journalismus sei auf Regierungslinie” (S. 53). Dieser positive Trend habe bis zum Ende des Sommers 2015 angehalten <span class="citation" data-cites="haller2017fluchtlingskrise">(vgl. <a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">Haller 2017, S.93</a>)</span>.</p>
+<blockquote class="blockquote">
+<p><em>“Im Laufe des 4. Quartals kommt nun aber auch eine völlig andere Tonlage, Stoßrichtung und Stimme im Parteienkonzert zu Gehör: Die Akteure der „Alternative für Deutschland” greifen das Narrativ Willkommenskultur auf und wenden es gegen seine Promotoren. Nachdem sie bis zum Sommer 2015 von der Presse im Kontext der Willkommenskultur kaum beachtet worden war, wird die AfD nun als Wortführer der Willkommenskultur-Kritiker quasi entdeckt und – vor allem im Anschluss an die Silvesternacht 2015/16 – in der Presse häufiger genannt als jede der Regierungsparteien”</em></p>
+<p><span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> S.93</p>
+</blockquote>
+<p>Die Stimmung kippte also spätestens nach der Silvesternacht von Köln, jedoch zeigt <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> auch, dass die Grundlage für eine negativere Berichterstattung bereits vorher gelegt wurde. Die Silvesternacht von Köln bezeichnet ein Ereignis, bei dem „es in der Kölner Innenstadt zu Ausschreitungen [kam], bei denen Asylbewerber Frauen sexuell bedrängten” <span class="citation" data-cites="Birkner2020Der">(<a href="#ref-Birkner2020Der" role="doc-biblioref">Birkner et al. 2020</a>)</span> S. 53]. Spätestens danach kam es zu einem Bruch der durchweg positiven Berichterstattung. Die Springer Presse mit BILD und WELT seien danach einen deutlich kritischeren Kurs gefahren. Der Großteil der Medien habe sich allerdings hinter die Flüchtlinge gestellt und Angela Merkels Linie; zusammengefasst mit ihrem viel zitierten Ausspruch „Wir schaffen das!” [vgl. Ebd. S.54].</p>
+</section>
+<section id="agenda-setting" class="level2">
+<h2 class="anchored" data-anchor-id="agenda-setting">Agenda Setting</h2>
+<p>Die Agenda Setting Theorie, eingeführt von <span class="citation" data-cites="mccombs1972agenda">McCombs and Shaw (<a href="#ref-mccombs1972agenda" role="doc-biblioref">1972</a>)</span> ist Theorie aus dem Bereich der Medienwissenschaften. Sie versteht Massenmedien als die Organe, die entscheiden, welche Themen Teil des öffentlichen Diskurses werden.</p>
+<blockquote class="blockquote">
+<p><em>“While the mass media may have little influence on the direction or intensity of attitudes, it is hypothesized that the mass media set the agenda for each political campaign, influencing the salience of attitudes toward the political issues.”</em></p>
+<hr>
+<p><em>“Während die Massenmedien nur einen geringen Einfluss auf die Richtung oder Intensität der Einstellungen haben, wird angenommen, dass die Massenmedien die Agenda für jede politische Kampagne festlegen und damit die Bedeutung der Einstellungen zu politischen Themen beeinflussen.”</em></p>
+<p><span class="citation" data-cites="mccombs1972agenda">McCombs and Shaw (<a href="#ref-mccombs1972agenda" role="doc-biblioref">1972</a>)</span></p>
+</blockquote>
+<p>Politik und Medien werden hier in Wechselwirkung zueinander verstanden. Poltiker:innen wählen ihre Platform für die nächste Zeit und stellen diese vor. Der redaktionelle Teil der Massenmedien greift diese Platform auf, aber entscheidet am Ende selbst, welchen Inhalten man mehr Platz einräumen möchte.</p>
+<p>Den Massenmedien kommt damit eine wichtige Rolle des öffentlichen Lebens zu. Nicht nur entwickelt sich der öffentliche Diskurs entlang der gesetzten Agenda, ebenfalls wird dieser Diskurs auch die politische Arena berühren und sie in ihrer zukünftigen Ausrichtung verändern. Einen besonderen Fall dieses Austausches beschreibt <span class="citation" data-cites="entman2003">Robert M. Entman (<a href="#ref-entman2003" role="doc-biblioref">2003</a>)</span> mit dem Kaskadeneffekt. Es ist ein Fall, der beschreibt, wenn Medien für bestimmte Agendapunkte das Framing aus homogenen Quellen direkt übernehmen. <span class="citation" data-cites="entman2003">Robert M. Entman (<a href="#ref-entman2003" role="doc-biblioref">2003</a>)</span> beschreibt dies im Zusammenhang des Irakkriegs, als Massenmedien meist unkritisch das Framing der Bush-Administration übernahmen und damit einen Krieg gegen den Irak zu einem großen Thema innerhalb des öffentlichen Diskurses machten.</p>
+</section>
+<section id="recognition-theorie" class="level2">
+<h2 class="anchored" data-anchor-id="recognition-theorie">Recognition Theorie</h2>
+<p>Das Feld der Recognition Theorie in der politischen Kommunikationstheorie ist ein wichtiges Forschungsgebiet, das die Rolle von Anerkennung bei der Gestaltung politischer Kommunikationsprozesse und -ergebnisse untersucht. Im Mittelpunkt steht die Frage, wie Individuen und Gruppen in verschiedenen politischen Kontexten anerkannt oder nicht anerkannt werden und wie diese Anerkennung ihr politisches Verhalten und ihre Einstellungen beeinflusst. Die Literatur auf diesem Gebiet ist relativ umfangreich, mit einer beträchtlichen Anzahl von Publikationen, die zur Begutachtung zur Verfügung stehen. Zahlreiche Wissenschaftlerinnen und Wissenschaftler haben sich mit verschiedenen Aspekten der Recognition Theorie in der politischen Kommunikation auseinandergesetzt und damit zur Tiefe und Breite der verfügbaren Literatur beigetragen.<br>
+<br>
+Quantitativ gibt es eine beträchtliche Menge an publizierter Literatur zur Recognition Theorie in der politischen Kommunikation. Eine oberflächliche Suche stößt auf zahlreiche Bücher, Zeitschriftenartikel und Konferenzbeiträge, die sich mit diesem Thema befassen. Die hohe Anzahl an Publikationen zeigt die Bedeutung und das Interesse an diesem Forschungsgebiet in der akademischen Gemeinschaft. Darüber hinaus deutet die Tatsache, dass es mehrere Möglichkeiten gibt, zu diesem Thema zu publizieren, auf einen gesunden wissenschaftlichen Diskurs und einen wachsenden Wissensbestand hin.<br>
+<br>
+Neben der Quantität der Veröffentlichungen ist die Zitationsaktivität rund um die Recognition Theorie in der politischen Kommunikation bemerkenswert. Viele der Schlüsseltexte und wegweisenden Arbeiten auf diesem Gebiet wurden von Wissenschaftlern aller Disziplinen vielfach zitiert, was auf die Wirkung und den Einfluss dieser Veröffentlichungen hinweist. Die Zitationsaktivität spiegelt die Anerkennung und Akzeptanz dieser Forschung in der akademischen Gemeinschaft sowie die anhaltende Relevanz und Bedeutung der Recognition Theorie in der politischen Kommunikation wider.<br>
+<br>
+Hinsichtlich der Veröffentlichungsrate ist es schwierig, einen eindeutigen Trend zu bestimmen. Es ist jedoch zu beobachten, dass das Interesse an der Recognition Theorie in der politischen Kommunikation konstant geblieben ist und im Laufe der Zeit sogar zugenommen hat. Die kontinuierliche Veröffentlichung neuer Publikationen und die Einbeziehung anerkennungstheoretischer Perspektiven in die politische Kommunikationsforschung deuten darauf hin, dass sich das Feld weiterentwickelt und erweitert. Darüber hinaus belegen die zunehmende Zahl interdisziplinärer Kooperationen und die Integration der Recognition Theorie in verwandte Bereiche das Wachstum dieses Forschungsbereichs.<br>
+<br>
+Zusammenfassend lässt sich sagen, dass die Literatur zur Recognition Theorie in der politischen Kommunikation umfangreich ist, mit einer signifikanten Anzahl von Publikationen und einer hohen Zitationsaktivität. Die Menge der verfügbaren Literatur zeigt die Bedeutung und das Interesse an diesem Feld, während die Zitationsaktivität den Einfluss und die Akzeptanz der Recognition Theorie in der politischen Kommunikationsforschung widerspiegelt. Die Publikationsrate scheint zuzunehmen, wobei das Feld im Laufe der Zeit Wachstum und Fortschritt erfährt. Da Wissenschaftlerinnen und Wissenschaftler die Recognition Theorie in der politischen Kommunikation weiter erforschen und erweitern, wird erwartet, dass dieser Forschungsbereich weiter florieren und zu unserem Verständnis von politischen Kommunikationsprozessen und -ergebnissen beitragen wird.</p>
+<section id="aspekte-der-recognition-theorie" class="level3">
+<h3 class="anchored" data-anchor-id="aspekte-der-recognition-theorie">Aspekte der Recognition Theorie</h3>
+<section id="recognition-theorie-und-demokratische-partizipation" class="level4">
+<h4 class="anchored" data-anchor-id="recognition-theorie-und-demokratische-partizipation"><strong>Recognition Theorie und demokratische Partizipation</strong></h4>
+<p>Dieses Thema untersucht die Implikationen der Recognition Theorie für demokratische Partizipation. Es geht der Frage nach, wie sich Anerkennung oder deren Fehlen auf politisches Engagement, Mitsprache und Inklusion auswirken kann. Die Literatur zu diesem Thema untersucht die Rolle der Anerkennung bei der Förderung eines sinnvollen Dialogs, einer Deliberation und einer Zusammenarbeit zwischen verschiedenen Gruppen in demokratischen Prozessen. Es untersucht auch die Barrieren für die Anerkennung innerhalb politischer Systeme und bietet Einblicke in Strategien zur Verbesserung der Anerkennung und zur Förderung einer inklusiveren und partizipativeren politischen Kommunikation.<br>
+</p>
+<details>
+<p><strong>Norris, P. (2000). A virtuous circle: Political communications in postindustrial societies. Cambridge University Press. <span class="citation" data-cites="Norris2000Virtuous">Norris (<a href="#ref-Norris2000Virtuous" role="doc-biblioref">2000</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag von Norris untersucht die Beziehung zwischen politischer Kommunikation und demokratischer Partizipation in postindustriellen Gesellschaften. Der Autor argumentiert, dass es einen positiven Kreislauf gibt, in dem verstärkte politische Kommunikation zu einem höheren Maß an demokratischer Partizipation führt und umgekehrt. Der Beitrag liefert empirische Belege aus verschiedenen Ländern, um dieses Argument zu untermauern.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Papiers ist, dass politische Kommunikation eine entscheidende Rolle bei der Förderung demokratischer Partizipation in postindustriellen Gesellschaften spielt. Er unterstreicht die Bedeutung eines wechselseitigen Kommunikationsprozesses zwischen politischen Akteuren und Bürgern.</p>
+<p><strong>Habermas, J. (1996). Between facts and norms: Contributions to a discourse theory of law and democracy. MIT Press. <span class="citation" data-cites="Habermas1998Between">Habermas and Habermas (<a href="#ref-Habermas1998Between" role="doc-biblioref">1998</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem einflussreichen Beitrag entwickelt Habermas seine Theorie des kommunikativen Handelns und seine Relevanz für demokratische Gesellschaften. Er argumentiert, dass Anerkennung und gegenseitiges Verständnis für demokratische Beratung und Entscheidungsfindung unerlässlich sind. Der Beitrag untersucht die Rolle der politischen Kommunikation bei der Förderung demokratischer Legitimität und die Bedeutung eines inklusiven öffentlichen Diskurses.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Papiers ist, dass politische Kommunikation, die auf gegenseitiger Anerkennung und rationalem Diskurs basiert, für das Funktionieren demokratischer Gesellschaften von entscheidender Bedeutung ist. Er betont die Notwendigkeit inklusiver und partizipativer Kommunikationsprozesse, um die demokratische Legitimität zu gewährleisten.</p>
+<p><strong>Fraser, N. (1995). Recognition without ethics? Theory, Culture &amp; Society, 12(2), 25-37. <span class="citation" data-cites="Fraser2001Recognition">Fraser (<a href="#ref-Fraser2001Recognition" role="doc-biblioref">2001</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Frasers Beitrag setzt sich kritisch mit dem Konzept der Anerkennung und seinen Implikationen für die politische Theorie auseinander. Sie argumentiert, dass Anerkennung allein nicht ausreicht, um soziale Gerechtigkeit und Gleichberechtigung zu erreichen. Der Beitrag untersucht die Grenzen anerkennungsbasierter Ansätze und hebt hervor, wie wichtig es ist, ethische Überlegungen in die politische Kommunikation und Theorie einzubeziehen.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Papiers ist, dass Anerkennung durch ethische Überlegungen in der politischen Kommunikation und Theorie ergänzt werden sollte. Er betont die Notwendigkeit, Machtungleichgewichte und strukturelle Ungleichheiten anzugehen, um echte soziale Gerechtigkeit zu erreichen.</p>
+<p><strong>Mouffe, C. (2000). Deliberative democracy or agonistic pluralism? Social Research, 67(3), 745-758. <span class="citation" data-cites="Mouffe1999Deliberative">Chantal Mouffe (<a href="#ref-Mouffe1999Deliberative" role="doc-biblioref">1999</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Mouffes Beitrag setzt sich kritisch mit dem Konzept der deliberativen Demokratie auseinander und schlägt einen alternativen Ansatz vor, der als agonistischer Pluralismus bezeichnet wird. Sie plädiert dafür, Konflikte und Meinungsverschiedenheiten als wesentliche Elemente des demokratischen Diskurses zu berücksichtigen. Das Papier stellt die Vorstellung in Frage, dass Konsens und rationale Beratung die einzigen legitimen Formen der politischen Kommunikation sind.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Papiers ist, dass politische Kommunikation einen agonistischen Pluralismus umfassen sollte, der den Ausdruck widersprüchlicher Standpunkte und die Anerkennung unterschiedlicher Identitäten ermöglicht. Er wendet sich gegen die Idee einer einheitlichen Öffentlichkeit und betont die Bedeutung einer inklusiven und pluralistischen politischen Kommunikation.</p>
+</details>
+</section>
+<section id="theoretische-grundlagen-der-recognition-theorie" class="level4">
+<h4 class="anchored" data-anchor-id="theoretische-grundlagen-der-recognition-theorie"><strong>Theoretische Grundlagen der Recognition Theorie</strong></h4>
+<p>Dieses Thema befasst sich mit den theoretischen Grundlagen der Recognition Theorie in der politischen Kommunikation. Diskutiert werden die Arbeiten einflussreicher Wissenschaftler, die zur Entwicklung dieser Theorie beigetragen haben, wie Nancy Fraser und Axel Honneth. Die Literatur zu diesem Thema setzt sich kritisch mit den verschiedenen Dimensionen der Anerkennung auseinander und hebt ihre Bedeutung für das Verständnis von Machtdynamiken und sozialer Gerechtigkeit in der politischen Kommunikation hervor.<br>
+<br>
+</p>
+<details>
+<p><strong>Fraser, N. (1995). From redistribution to recognition? Dilemmas of justice in a ‘post-socialist’ age. New Left Review, 212, 68-93. <span class="citation" data-cites="Fraser1995From">Fraser (<a href="#ref-Fraser1995From" role="doc-biblioref">1995a</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Der Beitrag untersucht die Verschiebung von der Fokussierung auf Umverteilung hin zur Anerkennung in Gerechtigkeitstheorien. Es untersucht die Implikationen dieses Wandels für die politische Kommunikation und die Kämpfe um soziale Gerechtigkeit. Das Papier argumentiert, dass Anerkennung unerlässlich ist, um die Ungerechtigkeiten anzugehen, mit denen marginalisierte Gruppen konfrontiert sind, und um eine inklusive politische Kommunikation zu fördern.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Das Papier kommt zu dem Schluss, dass die Anerkennung neben der Umverteilung als Schlüsselkomponente der Gerechtigkeit betrachtet werden sollte. Er betont die Notwendigkeit einer politischen Kommunikation, um die unterschiedlichen Erfahrungen und Identitäten von Individuen und Gruppen anzuerkennen und zu thematisieren.</p>
+<p><strong>Taylor, C. (1994). The politics of recognition. In A. Gutmann (Ed.), Multiculturalism: Examining the politics of recognition (pp.&nbsp;25-73). Princeton University Press. <span class="citation" data-cites="Taylor1995Politics">Taylor (<a href="#ref-Taylor1995Politics" role="doc-biblioref">1995</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag von Charles Taylor untersucht die Politik der Anerkennung im Kontext des Multikulturalismus. Es untersucht die Herausforderungen und Möglichkeiten der Anerkennung und des Respekts unterschiedlicher kultureller Identitäten in der politischen Kommunikation. In dem Papier wird argumentiert, dass Anerkennung für die Förderung eines Zugehörigkeitsgefühls und für die Förderung inklusiver demokratischer Praktiken von entscheidender Bedeutung ist.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Der Beitrag kommt zu dem Schluss, dass Anerkennung nicht nur eine Frage des individuellen Selbstwertgefühls ist, sondern auch eine notwendige Bedingung für demokratische Bürgerschaft. Sie betont die Bedeutung einer politischen Kommunikation, die die kulturellen Identitäten von Individuen und Gruppen anerkennt und wertschätzt.</p>
+<p><strong>Honneth, A. (2001). Recognition or redistribution? Changing perspectives on the moral order of society. Theory, Culture &amp; Society, 18(2-3), 43-55. <span class="citation" data-cites="Honneth2001Recognition">Honneth (<a href="#ref-Honneth2001Recognition" role="doc-biblioref">2001</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Der Beitrag von Axel Honneth untersucht das Verhältnis von Anerkennung und Umverteilung in Gerechtigkeitstheorien. Es untersucht die Spannungen und Komplementaritäten zwischen diesen beiden Konzepten und ihre Implikationen für die politische Kommunikation. Das Papier argumentiert, dass Anerkennung und Umverteilung miteinander verbunden sind und sich gegenseitig verstärkende Aspekte sozialer Gerechtigkeit sind.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Das Papier kommt zu dem Schluss, dass Anerkennung und Umverteilung nicht als konkurrierende Ansätze, sondern als komplementäre Dimensionen von Gerechtigkeit betrachtet werden sollten. Er unterstreicht, wie wichtig es ist, sowohl materielle Ungleichheiten als auch die Kämpfe um Anerkennung in der politischen Kommunikation und in gesellschaftlichen Arrangements anzuerkennen und anzugehen.</p>
+</details>
+</section>
+<section id="recognition-theorie-und-soziale-bewegungen" class="level4">
+<h4 class="anchored" data-anchor-id="recognition-theorie-und-soziale-bewegungen"><strong>Recognition Theorie und soziale Bewegungen</strong></h4>
+<p>Dieses Thema untersucht die Schnittstellen zwischen Recognition Theorie und sozialen Bewegungen. Es wird untersucht, wie soziale Bewegungen anerkennungsbasierte Ansprüche nutzen, um bestehende Machtstrukturen in Frage zu stellen und einen sozialen Wandel anzustreben. Die Literatur zu diesem Thema analysiert Fallstudien sozialer Bewegungen wie Bürgerrechtsbewegungen, feministische Bewegungen und LGBTQ+-Bewegungen, um zu verstehen, wie Anerkennungskämpfe die Dynamik der politischen Kommunikation prägen. Es untersucht auch die Rolle von Medien und digitalen Plattformen bei der Verstärkung oder Einschränkung von Anerkennungsansprüchen sozialer Bewegungen.</p>
+<details>
+<p><strong>Norris, P., &amp; Inglehart, R. (2019). Cultural Backlash: Trump, Brexit, and Authoritarian Populism. Cambridge University Press.</strong> <span class="citation" data-cites="Norris2019Cultural">Norris and Inglehart (<a href="#ref-Norris2019Cultural" role="doc-biblioref">2019</a>)</span></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag untersucht das Konzept des kulturellen Backlash und seine Rolle beim Aufstieg des autoritären Populismus, wobei der Schwerpunkt auf den Fällen Trump und Brexit liegt. Die Autoren argumentieren, dass kulturelle Gegenreaktionen, die von Gefühlen des Grolls und der Angst in bestimmten Teilen der Bevölkerung angetrieben werden, die Unterstützung für populistische Führer und Bewegungen angeheizt haben. Sie analysieren Umfragedaten aus verschiedenen Ländern, um ihre Behauptungen zu untermauern, und unterstreichen die Bedeutung der Recognition Theorie für das Verständnis politischer Kommunikation in diesen Kontexten.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Das Papier kommt zu dem Schluss, dass kulturelle Gegenreaktionen, die in Fragen der Identität und Anerkennung verwurzelt sind, eine bedeutende Rolle für den Erfolg populistischer Bewegungen gespielt haben. Er betont die Notwendigkeit politischer Kommunikationsstrategien, die diese Anliegen aufgreifen und Inklusivität und Anerkennung fördern.</p>
+<p><strong>Mouffe, C. (2000). The Democratic Paradox. Verso Books. <span class="citation" data-cites="Mouffe2000Democratic">C. Mouffe (<a href="#ref-Mouffe2000Democratic" role="doc-biblioref">2000</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag von Chantal Mouffe untersucht das demokratische Paradoxon und die Herausforderungen, die es für die politische Kommunikation mit sich bringt. Mouffe argumentiert, dass Demokratie von Natur aus konfliktbehaftet ist und dass das Ziel nicht darin bestehen sollte, Konflikte zu beseitigen, sondern einen demokratischen Agonismus zu etablieren, der den Ausdruck vielfältiger und widersprüchlicher politischer Identitäten ermöglicht. Sie erörtert die Bedeutung der Anerkennung in diesem Prozess und schlägt ein Modell des agonistischen Pluralismus als Alternative zu konsensbasierten Ansätzen vor.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung des Papiers ist, dass Anerkennung für demokratische Politik von entscheidender Bedeutung ist, da sie die Einbeziehung und den Ausdruck verschiedener politischer Identitäten ermöglicht. Mouffe plädiert für eine Abkehr von konsensbasierten Demokratiemodellen hin zu einem agonistischen Pluralismus, der Konflikte umarmt und die Legitimität unterschiedlicher politischer Positionen anerkennt.</p>
+<p><strong>Fraser, N. (1995). Recognition or Redistribution? Politics, Philosophy &amp; Economics, 4(4), 425-442. <span class="citation" data-cites="Fraser1995Recognition">Fraser (<a href="#ref-Fraser1995Recognition" role="doc-biblioref">1995b</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Nancy Frasers Beitrag untersucht das Spannungsverhältnis zwischen Anerkennung und Umverteilung in der politischen Theorie. Sie argumentiert, dass sowohl Anerkennung als auch Umverteilung für das Erreichen sozialer Gerechtigkeit unerlässlich sind, aber oft in Konflikt geraten. Fraser erörtert das Konzept der Fehlanerkennung und seine Auswirkungen auf marginalisierte Gruppen und betont die Notwendigkeit der Anerkennung als eine Form der Gerechtigkeit. Sie kritisiert auch Theorien, die der Umverteilung Vorrang vor der Anerkennung einräumen, und plädiert für einen umfassenderen Ansatz, der beide Dimensionen berücksichtigt.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Das Papier kommt zu dem Schluss, dass Anerkennung und Umverteilung miteinander verbunden sind und nicht als konkurrierende Ziele betrachtet werden sollten. Fraser plädiert für eine Politik der Anerkennung, die die Bedeutung von Identität und Differenz anerkennt und gleichzeitig die Notwendigkeit einer wirtschaftlichen Umverteilung anerkennt, um materielle Ungleichheiten zu beseitigen.</p>
+<p><strong>Taylor, C. (1992). The Politics of Recognition. Princeton University Press. <span class="citation" data-cites="Taylor1995Politics">Taylor (<a href="#ref-Taylor1995Politics" role="doc-biblioref">1995</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Charles Taylors Aufsatz untersucht die Politik der Anerkennung im Kontext des Multikulturalismus. Er argumentiert, dass Anerkennung für das Selbstwertgefühl und die Identität des Einzelnen unerlässlich ist und dass kulturelle Anerkennung ein entscheidender Aspekt der Gerechtigkeit ist. Taylor erörtert das Konzept der Identität und die Bedeutung der Anerkennung für die Förderung eines Zugehörigkeitsgefühls und einer gleichberechtigten Teilhabe an der Gesellschaft. Er befasst sich auch mit den Herausforderungen und Spannungen, die in multikulturellen Gesellschaften auftreten.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung des Papiers ist, dass Anerkennung ein grundlegender Aspekt der Gerechtigkeit ist und in multikulturellen Gesellschaften eine entscheidende Rolle spielt. Taylor betont die Notwendigkeit von Richtlinien und Praktiken, die die kulturelle Anerkennung und den Respekt für unterschiedliche Identitäten fördern, und erkennt gleichzeitig die Herausforderungen und Komplexitäten an, die mit dem Ausbalancieren verschiedener Formen der Anerkennung verbunden sind.</p>
+</details>
+</section>
+<section id="recognition-theorie-und-mediale-repräsentation" class="level4">
+<h4 class="anchored" data-anchor-id="recognition-theorie-und-mediale-repräsentation"><strong>Recognition Theorie und mediale Repräsentation</strong></h4>
+<p>Im Mittelpunkt dieses Themas steht das Verhältnis von Recognition Theorie und medialer Repräsentation. Es wird untersucht, wie Medienpraktiken und -botschaften bestehende Hierarchien, Identitäten und Ungleichheiten entweder verstärken oder in Frage stellen können. Die Literatur zu diesem Thema untersucht die Rolle der Medien bei der Gestaltung der öffentlichen Meinung, der Konstruktion von Identitäten und der Erleichterung oder Behinderung von Anerkennungsprozessen. Es untersucht auch die möglichen Folgen von Fehlanerkennungen und die Notwendigkeit, Repräsentationslücken in der politischen Kommunikation zu schließen.</p>
+<details>
+<p><strong>Entman, R. M. (1993). Framing: Toward clarification of a fractured paradigm. Journal of communication, 43(4), 51-58. <span class="citation" data-cites="Entman1993Framing">R. M. Entman (<a href="#ref-Entman1993Framing" role="doc-biblioref">1993</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Entmans Beitrag untersucht das Konzept des Framing in der politischen Kommunikationstheorie. Der Autor argumentiert, dass mediale Frames eine entscheidende Rolle bei der Gestaltung der öffentlichen Meinung und des politischen Diskurses spielen. Der Beitrag gibt einen umfassenden Überblick über verschiedene Framing-Techniken und deren Auswirkungen auf die Wahrnehmung des Publikums. Die wichtigste Schlussfolgerung des Papiers ist, dass Framing ein mächtiges Instrument ist, das von den Medien eingesetzt wird, um die öffentliche Meinung zu beeinflussen und politische Narrative zu formen.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen des Papiers sind, dass Medienframes einen signifikanten Einfluss auf die öffentliche Meinung haben, Framing-Techniken in ihrer Wirksamkeit variieren und das Verständnis von Framing für die Analyse politischer Kommunikation unerlässlich ist.</p>
+<p><strong>Hallin, D. C., &amp; Mancini, P. (2004). Comparing media systems: Three models of media and politics. Cambridge University Press. <span class="citation" data-cites="Hallin2004Comparing">Hallin and Mancini (<a href="#ref-Hallin2004Comparing" role="doc-biblioref">2004</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Die Arbeit von Hallin und Mancini vergleicht drei Modelle von Mediensystemen und ihr Verhältnis zur Politik. Die Autoren analysieren das liberale Modell, das demokratische korporatistische Modell und das polarisierte pluralistische Modell. Der Beitrag bietet einen umfassenden Rahmen für das Verständnis der Rolle der Medien in der politischen Kommunikation und hebt die Unterschiede zwischen den Mediensystemen in verschiedenen Ländern hervor. Die zentrale Schlussfolgerung der Arbeit ist, dass Mediensysteme die politische Kommunikation maßgeblich prägen und das Ausmaß des politischen Pluralismus und der Medienunabhängigkeit in einer Gesellschaft beeinflussen.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen des Papiers sind, dass die Mediensysteme von Land zu Land unterschiedlich sind, dass verschiedene Mediensysteme unterschiedliche Auswirkungen auf die politische Kommunikation haben und dass die Unabhängigkeit der Medien für eine gesunde demokratische Gesellschaft von entscheidender Bedeutung ist.</p>
+<p><strong>McCombs, M., &amp; Shaw, D. L. (1972). The agenda-setting function of mass media. Public opinion quarterly, 36(2), 176-187. <span class="citation" data-cites="mccombs1972agenda">McCombs and Shaw (<a href="#ref-mccombs1972agenda" role="doc-biblioref">1972</a>)</span></strong></p>
+<p><strong>Zusammenfassung</strong> : Der Aufsatz von McCombs und Shaw führt das Konzept des Agenda-Setting in der politischen Kommunikationstheorie ein. Die Autoren argumentieren, dass die Medien die Macht haben, die Bedeutung von Themen in der öffentlichen Meinung zu beeinflussen, indem sie bestimmen, welche Themen die meiste Aufmerksamkeit erhalten. Der Beitrag präsentiert empirische Evidenz, die die Agenda-Setting-Theorie stützt, und diskutiert ihre Implikationen für die politische Kommunikation. Die wichtigste Schlussfolgerung des Papiers ist, dass die Medien eine wichtige Rolle bei der Gestaltung der öffentlichen Meinung spielen, indem sie die Agenda bestimmen und bestimmte Themen gegenüber anderen hervorheben.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen des Papiers sind, dass die Medien die Macht haben, die öffentliche Meinung zu beeinflussen, indem sie die Agenda festlegen, dass das Agenda-Setting der Medien in den verschiedenen Medien unterschiedlich ist und dass die Medien eine entscheidende Rolle bei der Gestaltung des politischen Diskurses spielen.</p>
+<p><strong>Norris, P. (2000). A virtuous circle: Political communications in postindustrial societies. Cambridge University Press. <span class="citation" data-cites="Norris2000Virtuous">Norris (<a href="#ref-Norris2000Virtuous" role="doc-biblioref">2000</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Norris’ Beitrag untersucht das Verhältnis von politischer Kommunikation und Demokratie in postindustriellen Gesellschaften. Der Autor argumentiert, dass eine effektive politische Kommunikation für ein gesundes demokratisches System unerlässlich ist, und untersucht die Rolle von Medien, politischen Parteien und Bürgern in diesem Prozess. Der Beitrag bietet eine umfassende Analyse der Einflussfaktoren auf die politische Kommunikation und unterstreicht die Bedeutung eines positiven Kreislaufs zwischen Medien, politischen Institutionen und Bürgern. Die wichtigste Schlussfolgerung des Papiers ist, dass eine starke politische Kommunikation für das Funktionieren der Demokratie von entscheidender Bedeutung ist und eine aktive Beteiligung sowohl der Medien als auch der Bürger erfordert.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen des Papiers sind, dass politische Kommunikation für die Demokratie von entscheidender Bedeutung ist, dass Medien eine zentrale Rolle in der politischen Kommunikation spielen und dass ein positiver Kreislauf zwischen Medien, politischen Institutionen und Bürgern für eine effektive politische Kommunikation notwendig ist.</p>
+</details>
+</section>
+<section id="kritik-und-debatte-um-die-recognition-theorie" class="level4">
+<h4 class="anchored" data-anchor-id="kritik-und-debatte-um-die-recognition-theorie"><strong>Kritik und Debatte um die Recognition Theorie</strong></h4>
+<p>Dieses Thema setzt sich kritisch mit der Recognition Theorie in der politischen Kommunikation auseinander und stellt verschiedene Kritiken und Debatten rund um diesen Rahmen vor. Die Literatur zu diesem Thema analysiert alternative Perspektiven, wie z.B. Fehlerkennung und Umverteilung, und ihre Implikationen für das Verständnis politischer Kommunikationsprozesse. Es werden auch die Grenzen und Herausforderungen der Recognition Theorie diskutiert, einschließlich potenzieller Ausschlüsse, Essenzialisierungen oder der Vernachlässigung struktureller Ungleichheiten. Die Debatten innerhalb dieses Themas tragen dazu bei, die Recognition Theorie zu bereichern und ihre Anwendung in der politischen Kommunikationsforschung voranzutreiben.</p>
+<details>
+<p><strong>Fraser, N. (1995). Recognition or redistribution? A critical reading of Iris Young’s justice and the politics of difference. Journal of Political Philosophy, 3(2), 166-180. <span class="citation" data-cites="Fraser1995Recognition">Fraser (<a href="#ref-Fraser1995Recognition" role="doc-biblioref">1995b</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Beitrag setzt sich Nancy Fraser kritisch mit Iris Youngs Theorie der Gerechtigkeit und der Politik der Differenz auseinander und konzentriert sich dabei insbesondere auf das Spannungsverhältnis zwischen Anerkennung und Umverteilung. Fraser argumentiert, dass Youngs Betonung der Anerkennung die Bedeutung der wirtschaftlichen Umverteilung für die Erreichung sozialer Gerechtigkeit vernachlässigt. Sie schlägt vor, dass ein umfassenderer Ansatz erforderlich ist, der sowohl Anerkennung als auch Umverteilung kombiniert.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Papiers ist, dass ein rein anerkennungsbasierter Gerechtigkeitsansatz unzureichend ist und dass eine Kombination aus Anerkennung und Umverteilung notwendig ist, um soziale Gerechtigkeit zu erreichen.</p>
+<p><strong>Taylor, C. (1992). The politics of recognition. In A. Gutmann (Ed.), Multiculturalism: Examining the politics of recognition (pp.&nbsp;25-73). Princeton University Press. <span class="citation" data-cites="Taylor1995Politics">Taylor (<a href="#ref-Taylor1995Politics" role="doc-biblioref">1995</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Charles Taylors Aufsatz untersucht die Politik der Anerkennung im Kontext des Multikulturalismus. Er argumentiert, dass Anerkennung ein grundlegender Aspekt der menschlichen Identität ist und dass die Anerkennung kultureller Unterschiede für eine gerechte und integrative Gesellschaft unerlässlich ist. Taylor erörtert das Konzept der “positiven Anerkennung” und seine Implikationen für die politische Theorie und Praxis.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Papiers ist, dass die Anerkennung kultureller Unterschiede entscheidend für die Förderung des sozialen Zusammenhalts und der Gerechtigkeit in multikulturellen Gesellschaften ist.</p>
+<p><strong>Honneth, A. (1995). The struggle for recognition: The moral grammar of social conflicts. MIT Press.</strong></p>
+<p><strong>Zusammenfassung:</strong> Axel Honneths Buch untersucht das Konzept der Anerkennung als moralische Grammatik zum Verständnis sozialer Konflikte. Er argumentiert, dass Anerkennung ein grundlegendes menschliches Bedürfnis ist und dass Kämpfe um Anerkennung den Kern sozialer und politischer Konflikte bilden. Honneth untersucht verschiedene Formen der Anerkennung wie Liebe, Rechte und Solidarität und ihre Rolle bei der Gestaltung sozialer Beziehungen.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Buches ist, dass Kämpfe um Anerkennung zentral für soziale Konflikte sind und ein Mangel an Anerkennung zu verschiedenen Formen sozialer Ungerechtigkeit und Entfremdung führen kann.</p>
+<p><strong>Mouffe, C. (2000). The democratic paradox. Verso. <span class="citation" data-cites="Mouffe2000Democratic">C. Mouffe (<a href="#ref-Mouffe2000Democratic" role="doc-biblioref">2000</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Chantal Mouffes Buch untersucht die Paradoxien und Herausforderungen demokratischer Politik, einschließlich der Rolle der Anerkennung in demokratischen Gesellschaften. Sie argumentiert, dass demokratische Politik von Natur aus konfliktbehaftet ist und dass die Anerkennung unterschiedlicher politischer Identitäten und Perspektiven für eine lebendige und integrative Demokratie notwendig ist. Mouffe diskutiert auch das Konzept des agonistischen Pluralismus und seine Implikationen für die Demokratietheorie.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigste Schlussfolgerung dieses Buches ist, dass die Anerkennung politischer Unterschiede und die Akzeptanz von Konflikten für das Funktionieren einer demokratischen Gesellschaft unerlässlich sind.</p>
+</details>
+</section>
+</section>
+<section id="fazit" class="level3">
+<h3 class="anchored" data-anchor-id="fazit">Fazit</h3>
+<p>Insgesamt ist die Recognition Theorie in der politischen Kommunikationstheorie ein multidisziplinäres Feld, das untersucht, wie Individuen und Gruppen im Bereich der politischen Kommunikation anerkannt oder anerkannt werden. Es untersucht die komplexen Dynamiken zwischen Anerkennung, Macht, Identität und Repräsentation in verschiedenen politischen Kontexten. Diese Literatur bietet wertvolle Einblicke in die Funktionsweise demokratischer Gesellschaften, die Rolle der Medien und die öffentliche Meinungsbildung. Durch die Analyse der Art und Weise, wie Anerkennung gewährt oder verweigert wird, tragen die Wissenschaftlerinnen und Wissenschaftler zum Verständnis der Herausforderungen und Chancen bei, die in der gegenwärtigen politischen Kommunikation bestehen.<br>
+<br>
+Einer der Hauptwerte dieser Forschung ist ihr Potenzial, demokratische Prozesse und gesellschaftliche Inklusion zu verbessern. Zu verstehen, wie Anerkennung in der politischen Kommunikation funktioniert, kann zu einer gerechteren Repräsentation und Teilhabe führen, sowohl in Bezug auf marginalisierte Gruppen als auch auf die breitere Öffentlichkeit. Indem sie untersuchen, wie bestimmte Personen oder Gruppen anerkannt werden, können Forschende Machtdynamiken und systemische Ungleichheiten beleuchten, die innerhalb von Gesellschaften bestehen können. Dieses Wissen kann dann in politische Maßnahmen und Interventionen einfließen, die darauf abzielen, diese Probleme anzugehen und ein inklusiveres politisches System zu fördern.<br>
+<br>
+Darüber hinaus unterstreicht diese Forschung auch die entscheidende Rolle der Medien in der politischen Kommunikation. Die Anerkennung von Einzelpersonen oder Gruppen wird oft von der Art und Weise beeinflusst, wie sie in den Medien dargestellt werden, von ihrem Zugang zu Plattformen für politische Meinungsäußerung und von der Sichtbarkeit, die sie erhalten. Durch die Untersuchung dieser Prozesse tragen Wissenschaftlerinnen und Wissenschaftler zu unserem Verständnis von Medienverzerrungen, Framing-Effekten und der Konstruktion der öffentlichen Meinung bei. Dieses Wissen kann für Journalisten, politische Entscheidungsträger und Medienorganisationen von unschätzbarem Wert sein, um eine faire und genaue Repräsentation verschiedener Stimmen im öffentlichen Raum zu gewährleisten.<br>
+<br>
+Ein wichtiger Forschungsansatz ist die Untersuchung des Einflusses digitaler Kommunikationstechnologien auf die Anerkennung in der Politik. Mit dem Aufkommen von sozialen Medien und Online-Plattformen haben sich politisches Engagement und Kommunikation erheblich verändert. Es wäre wertvoll zu untersuchen, wie sich diese neuen Kommunikationskanäle auf die Anerkennung von Individuen und Gruppen auswirken und welche Auswirkungen dies auf demokratische Prozesse haben könnte. Darüber hinaus könnte sich die weitere Forschung in vergleichende Studien über verschiedene Länder und politische Systeme hinweg befassen, um interkulturelle Unterschiede in der Anerkennungspraxis und ihre Konsequenzen zu identifizieren.<br>
+<br>
+Ein weiterer Bereich, der es wert ist, untersucht zu werden, ist die Rolle der Anerkennung in der politischen Mobilisierung und in sozialen Bewegungen. Zu verstehen, wie Anerkennung angestrebt, erreicht und verweigert wird, kann Aufschluss über die Strategien verschiedener politischer Akteure geben, um öffentliche Unterstützung zu mobilisieren und bestehende Machtstrukturen in Frage zu stellen. Diese Forschungsrichtung könnte zur Entwicklung wirksamer Strategien für sozialen und politischen Wandel beitragen und die Bemühungen der Interessenvertretung und des Aktivismus unterstützen.<br>
+<br>
+Insgesamt bietet die Recognition Theorie in der politischen Kommunikationstheorie wertvolle Einblicke in Machtdynamiken, Identitätsbildung und demokratische Prozesse. Durch die Untersuchung der Funktionsweise von Anerkennung im politischen Raum hat diese Forschung das Potenzial, zu inklusiveren und repräsentativeren Gesellschaften beizutragen. Weitere Forschungen könnten sich auf die Auswirkungen digitaler Kommunikationstechnologien, interkulturelle Vergleiche und die Rolle der Anerkennung bei der politischenMobilisierung konzentrieren, was unser Verständnis dieses komplexen und bedeutenden Feldes vertiefen würde.</p>
+</section>
+</section>
+<section id="large-language-models-in-der-politikwissenschaft" class="level2">
+<h2 class="anchored" data-anchor-id="large-language-models-in-der-politikwissenschaft">Large Language Models in der Politikwissenschaft</h2>
+<p>Das Feld der Large Language Models (LLMs) in der Politikwissenschaft hat in den letzten Jahren große Aufmerksamkeit erregt. Die Literatur in diesem Bereich hat ein deutliches Wachstum erfahren, sowohl in Bezug auf die Quantität als auch auf die Zitationsaktivität. Forscher haben zunehmend das Potenzial LLMs wie GPT-3 von OpenAI für das Verständnis und die Analyse politischer Phänomene erkannt. Es ist eine Vielzahl von Publikationen entstanden, die verschiedene Aspekte der Politikwissenschaft abdecken und LLMs verwenden, um Forschungsfragen zu beantworten. Die Verfügbarkeit und Verwendung LLMs haben wesentlich dazu beigetragen, die Breite und Tiefe der veröffentlichten Literatur auf diesem Gebiet zu erweitern.<br>
+<br>
+Erstens hat die Anzahl der Publikationen zu LLMs in der Politikwissenschaft in den letzten Jahren deutlich zugenommen. Forscher haben zahlreiche Studien veröffentlicht, in denen diese Modelle verwendet werden, um Themen wie die Erkennung politischer Ideologien, die Stimmungsanalyse politischer Reden und die Vorhersage von Wahlergebnissen zu untersuchen. Der Anstieg der Veröffentlichungen deutet auf ein wachsendes Interesse und eine wachsende Anerkennung des Wertes hin, den LLMs für das Studium der Politik bringen. Diese Verbreitung von Literatur bedeutet die Erweiterung des Forschungsbereichs und das Potenzial für weitere Fortschritte auf diesem Gebiet.<br>
+<br>
+Darüber hinaus ist die Zitationsaktivität im Zusammenhang mit Veröffentlichungen zu LLMsn in der Politikwissenschaft bemerkenswert. Prominente Studien, die diese Modelle verwenden, haben von Wissenschaftlern auf diesem Gebiet große Aufmerksamkeit erhalten, was zu einer hohen Anzahl von Zitaten geführt hat. Diese Zitationsaktivität zeigt die Anerkennung und Glaubwürdigkeit, die die Literatur in diesem Bereich erlangt hat. Es spiegelt auch den Einfluss und die Auswirkungen LLMs auf die Weiterentwicklung der politikwissenschaftlichen Forschung wider.<br>
+<br>
+Zusammenfassend lässt sich sagen, dass die Literatur zu LLMs in der Politikwissenschaft einen bemerkenswerten Anstieg sowohl der Quantität als auch der Zitationsaktivität verzeichnet hat. Das wachsende Interesse und die Erkenntnis des Potenzials LLMs für das Verständnis politischer Phänomene haben zur Breite und Tiefe der veröffentlichten Forschung auf diesem Gebiet beigetragen. Die Verfügbarkeit dieser Modelle hat den Untersuchungsumfang erweitert und ermöglicht es den Forschern, ein breites Spektrum an politikwissenschaftlichen Themen zu untersuchen. Die Publikationsrate in diesem Bereich wird wahrscheinlich weiter zunehmen, da Wissenschaftler neue Möglichkeiten erforschen und bestehende Methoden unter Verwendung LLMs verfeinern. Einige der wichtigsten Themen, die sich aus der Literatur ergeben, sind wie folgt:<br>
+</p>
+<section id="literature-überblick" class="level3">
+<h3 class="anchored" data-anchor-id="literature-überblick">Literature Überblick</h3>
+<section id="der-einfluss-von-llms-auf-die-politische-kommunikation" class="level4">
+<h4 class="anchored" data-anchor-id="der-einfluss-von-llms-auf-die-politische-kommunikation"><strong>Der Einfluss von LLMs auf die politische Kommunikation</strong></h4>
+<p>Dieses Thema untersucht, wie große LLMs die politische Kommunikation beeinflusst haben. Wissenschaftler haben die Verwendung dieser Modelle bei der Generierung politischer Botschaften, der Vorhersage öffentlicher Reaktionen und der Identifizierung überzeugender Strategien untersucht. Die Debatte innerhalb dieses Themas dreht sich um die ethischen Implikationen von künstlicher Intelligenz bei der Gestaltung der politischen Kommunikation und das Potenzial für Voreingenommenheit oder Fehlinformationen.<br>
+<br>
+</p>
+<details>
+<p><strong>Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent dirichlet allocation. Journal of machine Learning research, 3(Jan), 993-1022. <span class="citation" data-cites="Blei2003Latent">Blei, Ng, and Jordan (<a href="#ref-Blei2003Latent" role="doc-biblioref">2003</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Artikel wird die Latent Dirichlet Allocation (LDA) vorgestellt, ein generatives probabilistisches Modell für Sammlungen diskreter Daten, wie z.B. Textkorpora. LDA geht davon aus, dass jedes Dokument eine Mischung aus einer kleinen Anzahl von Themen ist und dass jedes Wort im Dokument einem der Themen des Dokuments zugeordnet ist. Der Artikel stellt die mathematische Formulierung von LDA vor und beschreibt einen effizienten Algorithmus für die posteriore Inferenz unter Verwendung von Gibbs-Sampling. Die Autoren zeigen die Wirksamkeit von LDA auf verschiedenen Textkorpora.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieser Arbeit sind die Einführung von LDA als leistungsfähiges Werkzeug zur Themenmodellierung in Textkorpora und die Demonstration seiner Wirksamkeit in verschiedenen Anwendungen.</p>
+<p><strong>Grimmer, J., &amp; Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. Political analysis, 21(3), 267-297. <span class="citation" data-cites="Grimmer2013Text">Grimmer and Stewart (<a href="#ref-Grimmer2013Text" role="doc-biblioref">2013</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag gibt einen Überblick über Methoden der automatischen Inhaltsanalyse für politische Texte und diskutiert deren Versprechen und Fallstricke. Die Autoren beleuchten das Potenzial LLMs für die Analyse politischer Texte und identifizieren Herausforderungen wie Verzerrung, Interpretierbarkeit und Skalierbarkeit. Sie diskutieren auch die Implikationen des Einsatzes automatisierter Methoden für die politikwissenschaftliche Forschung.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieser Arbeit sind die Anerkennung des Potenzials LLMs für die Analyse politischer Texte und die Identifizierung von Herausforderungen und Implikationen, die mit ihrer Verwendung in der politikwissenschaftlichen Forschung verbunden sind.</p>
+<p><strong>Laver, M., Benoit, K., &amp; Garry, J. (2003). Extracting policy positions from political texts using words as data. American political science review, 97(02), 311-331. <span class="citation" data-cites="Laver2003Extracting">Laver, Benoit, and Garry (<a href="#ref-Laver2003Extracting" role="doc-biblioref">2003</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Beitrag wird eine Methode zur Extraktion politischer Positionen aus politischen Texten unter Verwendung von Wörtern als Daten vorgestellt. Die Autoren schlagen einen Skalierungsalgorithmus vor, der Worthäufigkeiten auf einen Politikraum abbildet und die Abschätzung von politischen Positionen politischer Akteure ermöglicht. Sie wenden die Methode an, um Parteiprogramme und Reden in Großbritannien und Irland zu analysieren, und zeigen ihre Nützlichkeit für die Untersuchung des politischen Wettbewerbs und der politischen Positionen.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieser Arbeit sind die Einführung einer Methode zur Extraktion politischer Positionen aus politischen Texten unter Verwendung von Wörtern als Daten und die Demonstration ihrer Anwendbarkeit für die Untersuchung von politischem Wettbewerb und politischen Positionen.</p>
+</details>
+</section>
+<section id="einsatz-llms-in-der-politischen-diskursanalyse" class="level4">
+<h4 class="anchored" data-anchor-id="einsatz-llms-in-der-politischen-diskursanalyse"><strong>Einsatz LLMs in der politischen Diskursanalyse</strong></h4>
+<p>Dieses Thema konzentriert sich auf die Anwendung LLMs bei der Analyse des politischen Diskurses. Forscher haben diese Modelle verwendet, um politische Reden, Social-Media-Daten und Nachrichtenartikel zu analysieren, um politische Trends, Stimmungen und die öffentliche Meinung zu verstehen. Die Debatte innerhalb dieses Themas dreht sich um die Zuverlässigkeit und Genauigkeit LLMs bei der Erfassung nuancierter politischer Diskurse.<br>
+<br>
+</p>
+<details>
+<p><strong>Grimmer, J., &amp; Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. Political Analysis, 21(3), 267-297. <span class="citation" data-cites="Grimmer2013Text">Grimmer and Stewart (<a href="#ref-Grimmer2013Text" role="doc-biblioref">2013</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag untersucht den Einsatz von Methoden der automatischen Inhaltsanalyse, insbesondere von LLMsn, in politischen Texten. Die Autoren diskutieren die potenziellen Vorteile und Herausforderungen des Einsatzes dieser Methoden und heben das Versprechen hervor, das sie für die Analyse großer Mengen politischer Textdaten bergen. Sie befassen sich auch mit den Fallstricken und Einschränkungen, wie z. B. Genauigkeitsproblemen und potenziellen Verzerrungen, die Forscher bei der Anwendung dieser Techniken beachten sollten. Der Beitrag liefert wertvolle Einblicke in die Anwendung LLMs in der politikwissenschaftlichen Forschung.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> dieses Artikels betonen das Potenzial LLMs für die Analyse politischer Texte, warnen aber auch vor den Grenzen und Herausforderungen, die mit diesen Methoden verbunden sind.</p>
+<p><strong>Hopkins, D. J., &amp; King, G. (2010). A method of automated nonparametric content analysis for social science. American Journal of Political Science, 54(1), 229-247. <span class="citation" data-cites="Hopkins2010Method">Hopkins and King (<a href="#ref-Hopkins2010Method" role="doc-biblioref">2010</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Beitrag wird eine Methode der automatisierten nichtparametrischen Inhaltsanalyse, die die Verwendung LLMs einschließt, für die sozialwissenschaftliche Forschung vorgestellt. Die Autoren schlagen einen Ansatz vor, der es Forschern ermöglicht, große Mengen an Textdaten zu analysieren, ohne sich auf bereits vorhandene Wörterbücher oder Kodierungsschemata verlassen zu müssen. Sie demonstrieren die Wirksamkeit dieser Methode durch verschiedene Anwendungen, darunter die Analyse politischer Reden und der Medienberichterstattung. Der Beitrag leistet einen wertvollen Beitrag zur Politikwissenschaft, indem er einen robusten und effizienten Ansatz zur Inhaltsanalyse unter Verwendung LLMs bietet.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieses Papiers heben die Vorteile der automatisierten nichtparametrischen Inhaltsanalyse hervor, einschließlich der Fähigkeit, große Mengen von Textdaten zu analysieren, und der Flexibilität, sich an verschiedene Forschungskontexte anzupassen.</p>
+<p><strong>Laver, M., Benoit, K., &amp; Garry, J. (2003). Extracting policy positions from political texts using words as data. American Political Science Review, 97(2), 311-331. <span class="citation" data-cites="Laver2003Extracting">Laver, Benoit, and Garry (<a href="#ref-Laver2003Extracting" role="doc-biblioref">2003</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag konzentriert sich auf die Extraktion politischer Positionen aus politischen Texten unter Verwendung von Wörtern als Daten. Die Autoren diskutieren die Herausforderungen bei der manuellen Kodierung und Analyse großer Mengen von Textdaten und schlagen einen automatisierten Ansatz unter Verwendung LLMs vor. Sie demonstrieren die Wirksamkeit dieser Methode, indem sie politische Positionen aus Parteiprogrammen und Reden extrahieren. Das Papier bietet wertvolle Einblicke in die Anwendung LLMs zur Extraktion politischer Positionen und bietet eine effizientere und zuverlässigere Alternative zur manuellen Codierung.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieses Papiers betonen die Vorteile der Verwendung LLMs zur Extraktion politischer Positionen aus politischen Texten, einschließlich erhöhter Effizienz, Genauigkeit und Zuverlässigkeit im Vergleich zu manuellen Kodierungsmethoden.</p>
+<p><strong>Grimmer, J., &amp; King, G. (2011). General purpose computer-assisted clustering and conceptualization. Proceedings of the National Academy of Sciences, 108(7), 2643-2650. <span class="citation" data-cites="Grimmer2011General">Grimmer and King (<a href="#ref-Grimmer2011General" role="doc-biblioref">2011</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Artikel wird eine universelle computergestützte Clustering- und Konzeptualisierungsmethode vorgestellt, die LLMs verwendet. Die Autoren schlagen einen Ansatz vor, der es Forschern ermöglicht, große Mengen von Textdaten auf der Grundlage gemeinsamer Konzepte und Themen automatisch zu gruppieren und zu analysieren. Sie demonstrieren die Wirksamkeit dieser Methode durch verschiedene Anwendungen, darunter die Analyse von politischen Reden und Zeitungsartikeln. Der Beitrag bietet wertvolle Einblicke in die Verwendung LLMs für die Clusterung und Konzeptualisierung politischer Texte und bietet ein leistungsfähiges Werkzeug für Forschende in der Politikwissenschaft.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieses Artikels heben die Vorteile des computergestützten Clusterings und der Konzeptualisierung unter Verwendung LLMs hervor, einschließlich der Fähigkeit, große Mengen an Textdaten zu verarbeiten und verborgene Muster und Beziehungen aufzudecken.</p>
+</details>
+</section>
+<section id="llms-und-policygestaltung" class="level4">
+<h4 class="anchored" data-anchor-id="llms-und-policygestaltung"><strong>LLMs und Policygestaltung</strong></h4>
+<p>Dieses Thema untersucht die Rolle LLMs in politischen Entscheidungsprozessen. Forscher haben die Verwendung dieser Modelle bei der Erstellung von Politikempfehlungen, der Bewertung der öffentlichen Stimmung gegenüber bestimmten Politiken und der Identifizierung potenzieller Nebenwirkungen oder unbeabsichtigter Folgen untersucht. Die Debatte zu diesem Thema beinhaltet Diskussionen darüber, inwieweit LLMs die menschliche Expertise bei der Politikformulierung ersetzen oder erweitern können.<br>
+<br>
+</p>
+<details>
+<p><strong>Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent dirichlet allocation. Journal of machine Learning research, 3(Jan), 993-1022. <span class="citation" data-cites="Blei2003Latent">Blei, Ng, and Jordan (<a href="#ref-Blei2003Latent" role="doc-biblioref">2003</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Artikel wird die Latent Dirichlet Allocation (LDA) vorgestellt, ein generatives probabilistisches Modell für Sammlungen diskreter Daten, wie z.B. Textkorpora. LDA geht davon aus, dass jedes Dokument eine Mischung aus einer kleinen Anzahl von Themen ist und dass das Vorhandensein jedes Wortes einem der Themen des Dokuments zugeordnet ist. Der Beitrag stellt die mathematische Formulierung von LDA vor und beschreibt den Inferenzalgorithmus zur Schätzung der Themenverteilungen. Es werden auch Anwendungen von LDA in der Textanalyse diskutiert und experimentelle Ergebnisse an verschiedenen Datensätzen bereitgestellt.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieser Arbeit sind die Einführung von LDA als leistungsfähiges Werkzeug zur Themenmodellierung in der Textanalyse und die Demonstration seiner Wirksamkeit in verschiedenen Anwendungen.</p>
+<p><strong>Grimmer, J., &amp; Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. Political analysis, 21(3), 267-297. <span class="citation" data-cites="Grimmer2013Text">Grimmer and Stewart (<a href="#ref-Grimmer2013Text" role="doc-biblioref">2013</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Beitrag wird der Einsatz von Methoden der automatischen Inhaltsanalyse, insbesondere der Themenmodellierung, zur Analyse politischer Texte untersucht. Die Autoren diskutieren die Vorteile und Herausforderungen der Verwendung von Text als Daten in der politikwissenschaftlichen Forschung und geben einen umfassenden Überblick über bestehende Methoden. Sie beleuchten das Potenzial der Themenmodellierung zur Aufdeckung latenter Themen und Muster in politischen Texten und diskutieren die Grenzen und Fallstricke dieser Methoden. Das Papier enthält auch Empfehlungen für Forscher, die Text als Daten in der politischen Analyse verwenden.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieser Arbeit sind das Potenzial automatischer Inhaltsanalysemethoden, insbesondere der Themenmodellierung, in der politikwissenschaftlichen Forschung und die Notwendigkeit für Forscher, sich der Grenzen und Herausforderungen bewusst zu sein, die mit diesen Methoden verbunden sind.</p>
+<p><strong>Grimmer, J., &amp; King, G. (2011). General purpose computer-assisted clustering and conceptualization. Proceedings of the National Academy of Sciences, 108(7), 2643-2650. <span class="citation" data-cites="Grimmer2011General">Grimmer and King (<a href="#ref-Grimmer2011General" role="doc-biblioref">2011</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Artikel wird eine Methode namens General Purpose Computer-Assisted Clustering and Conceptualization (GCC) vorgestellt, die automatisierte Clustering-Algorithmen mit menschlichem Urteilsvermögen kombiniert, um Textdaten zu analysieren. Die Autoren demonstrieren die Anwendung von GCC in der Politikwissenschaft, indem sie einen großen Korpus politischer Reden analysieren. Sie zeigen, wie GCC sinnvolle Cluster von Wörtern und Konzepten aufdecken und Einblicke in den politischen Diskurs geben kann. Das Papier erörtert auch die Vorteile und Grenzen des GCC und gibt Leitlinien für seine Umsetzung.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieser Arbeit sind die Einführung von GCC als wertvolles Werkzeug zur Analyse von Textdaten in der politikwissenschaftlichen Forschung und die Demonstration seiner Wirksamkeit bei der Aufdeckung aussagekräftiger Muster und Konzepte in politischen Reden.</p>
+<p><strong>Laver, M., Benoit, K., &amp; Garry, J. (2003). Extracting policy positions from political texts using words as data. American political science review, 97(02), 311-331. <span class="citation" data-cites="Laver2003Extracting">Laver, Benoit, and Garry (<a href="#ref-Laver2003Extracting" role="doc-biblioref">2003</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Beitrag wird eine Methode vorgestellt, mit der politische Positionen aus politischen Texten mit Hilfe eines statistischen Modells namens Wordscores extrahiert werden können. Die Autoren demonstrieren die Anwendung von Wordscores bei der Analyse von Parteiprogrammen und Reden, um die politischen Positionen politischer Akteure zu messen. Sie vergleichen die Ergebnisse von Wordscores mit Expertenbefragungen und zeigen eine hohe Zustimmung. Der Beitrag diskutiert auch die Vorteile und Grenzen der Verwendung von Wörtern als Daten in der politikwissenschaftlichen Forschung und gibt Empfehlungen für zukünftige Forschung.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die wichtigsten Schlussfolgerungen dieser Arbeit sind die Einführung von Wordscores als zuverlässige Methode zur Extraktion politischer Positionen aus politischen Texten und die Validierung von Wordscores durch den Vergleich mit Expertenbefragungen.</p>
+</details>
+</section>
+<section id="herausforderungen-und-grenzen-llms-in-der-politikwissenschaft" class="level4">
+<h4 class="anchored" data-anchor-id="herausforderungen-und-grenzen-llms-in-der-politikwissenschaft"><strong>Herausforderungen und Grenzen LLMs in der Politikwissenschaft</strong></h4>
+<p>Dieses Thema befasst sich mit den Herausforderungen und Grenzen, die mit der Verwendung LLMs in der politikwissenschaftlichen Forschung verbunden sind. Wissenschaftler haben Themen wie Verzerrungen von Datensätzen, Manipulationspotenzial und Schwierigkeiten bei der Interpretation und Validierung von Modellergebnissen untersucht. Die Debatte innerhalb dieses Themas dreht sich um die Verbesserung der Modelltransparenz, die Berücksichtigung ethischer Bedenken und die Entwicklung robuster Bewertungsrahmen für die Bewertung der Modellleistung in politikwissenschaftlichen Anwendungen.<br>
+</p>
+<details>
+<p><strong>Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent Dirichlet Allocation. Journal of Machine Learning Research, 3(Jan), 993-1022. <span class="citation" data-cites="Blei2003Latent">Blei, Ng, and Jordan (<a href="#ref-Blei2003Latent" role="doc-biblioref">2003</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Artikel wird die Latent Dirichlet Allocation (LDA) vorgestellt, ein generatives probabilistisches Modell zur Entdeckung von Themen in großen Dokumentensammlungen. Die Autoren schlagen einen Bayes’schen Ansatz vor, um auf die verborgene Themenstruktur eines Korpus zu schließen und die Themenverteilungen von Dokumenten abzuschätzen. LDA ist in verschiedenen Bereichen, einschließlich der Politikwissenschaft, weit verbreitet, um Textdaten zu analysieren und latente Themen oder Themen aufzudecken.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die Autoren zeigen die Effektivität von LDA bei der Entdeckung von Themen in einem Korpus auf und bieten einen Rahmen für die Anwendung dieses Modells auf die politikwissenschaftliche Forschung. Sie unterstreichen die Bedeutung der Themenmodellierung für das Verständnis von Inhalt und Struktur politischer Texte.</p>
+<p><strong>Grimmer, J., &amp; Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267-297. <span class="citation" data-cites="Grimmer2013Text">Grimmer and Stewart (<a href="#ref-Grimmer2013Text" role="doc-biblioref">2013</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> Dieser Beitrag untersucht den Einsatz von Methoden der automatischen Inhaltsanalyse, einschließlich LLMs, zur Analyse politischer Texte. Die Autoren diskutieren die Vorteile und Herausforderungen des Einsatzes dieser Methoden und geben Einblicke in die möglichen Verzerrungen und Einschränkungen, die mit der automatisierten Textanalyse verbunden sind. Sie betonen die Notwendigkeit einer sorgfältigen Interpretation und Validierung der Ergebnisse, die aus LLMsn gewonnen werden.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die Autoren heben das Potenzial LLMs für die politische Textanalyse hervor, warnen die Forscher jedoch vor den Grenzen und potenziellen Fallstricken. Sie betonen, wie wichtig es ist, automatisierte Methoden mit menschlicher Interpretation und Fachwissen zu kombinieren, um eine genaue und aussagekräftige Analyse zu gewährleisten.</p>
+<p><strong>Grimmer, J., &amp; King, G. (2011). General Purpose Computer-Assisted Clustering and Conceptualization. Proceedings of the National Academy of Sciences, 108(7), 2643-2650. <span class="citation" data-cites="Grimmer2011General">Grimmer and King (<a href="#ref-Grimmer2011General" role="doc-biblioref">2011</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Artikel wird eine Methode namens General Purpose Computer-Assisted Clustering and Conceptualization (GCC) vorgestellt, die LLMs verwendet, um Textdaten zu analysieren und zu kategorisieren. Die Autoren zeigen, wie GCC auf die politikwissenschaftliche Forschung angewendet werden kann, indem sie politische Reden clustern und visualisieren. Sie verdeutlichen das Potenzial LLMs für die Aufdeckung von Mustern und Zusammenhängen in politischen Texten.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die Autoren zeigen den Nutzen von GCC in der politikwissenschaftlichen Forschung auf und betonen seine Fähigkeit, aussagekräftige Cluster und Konzeptualisierungen in Textdaten aufzudecken. Sie deuten darauf hin, dass LLMs unser Verständnis des politischen Diskurses verbessern und die Erforschung komplexer politischer Konzepte erleichtern können.</p>
+<p><strong>Laver, M., Benoit, K., &amp; Garry, J. (2003). Extracting Policy Positions from Political Texts Using Words as Data. American Political Science Review, 97(02), 311-331. <span class="citation" data-cites="Laver2003Extracting">Laver, Benoit, and Garry (<a href="#ref-Laver2003Extracting" role="doc-biblioref">2003</a>)</span></strong></p>
+<p><strong>Zusammenfassung:</strong> In diesem Beitrag wird eine Methode zur Extraktion politischer Positionen aus politischen Texten unter Verwendung von Wörtern als Daten vorgestellt. Die Autoren schlagen einen Skalierungsalgorithmus vor, der Worthäufigkeiten auf einen Politikraum abbildet und so die Messung und den Vergleich politischer Positionen ermöglicht. Sie demonstrieren die Anwendung dieser Methode zur Analyse politischer Reden und Parteiprogramme.</p>
+<p><strong>Wichtigste Schlussfolgerungen:</strong> Die Autoren zeigen, dass Wörter als wertvolle Indikatoren für politische Positionen dienen können und bieten einen systematischen Ansatz, um solche Positionen aus politischen Texten zu extrahieren und zu analysieren. Sie unterstreichen das Potenzial dieser Methode für die Untersuchung politischer Ideologie und politischer Präferenzen in verschiedenen Kontexten.</p>
+</details>
+</section>
+</section>
+<section id="fazit-1" class="level3">
+<h3 class="anchored" data-anchor-id="fazit-1">Fazit</h3>
+<p>Insgesamt zeigt die kollektive Literatur zu Large Language Models (LLMs) in der Politikwissenschaft ihren bedeutenden Wert für die Gesellschaft. Diese Modelle haben sich als leistungsfähige Werkzeuge erwiesen, um politische Texte zu analysieren, Vorhersagen zu erstellen und die Dynamik der öffentlichen Meinung zu verstehen. LLMs ermöglichen es Forschern und politischen Entscheidungsträgern, große Mengen an Textdaten zu verarbeiten und schnell und effizient wertvolle Erkenntnisse zu gewinnen. Ihre Fähigkeit, den politischen Diskurs zu analysieren und die politische Stimmung zu verfolgen, hat das Potenzial, die politische Entscheidungsfindung zu verbessern, zu einer evidenzbasierten Politikentwicklung beizutragen und ein tieferes Verständnis der politischen Dynamik zu vermitteln.<br>
+<br>
+Darüber hinaus kann der Einsatz von LLMs in der politikwissenschaftlichen Forschung dazu beitragen, kritische gesellschaftliche Herausforderungen zu bewältigen. Diese Technologie ermöglicht es Forschern, politische Polarisierung, Desinformation und Propaganda zu untersuchen, indem sie Online-Diskussionen und Nachrichtenartikel analysieren. Durch das Verständnis der zugrunde liegenden Muster und Dynamiken dieser Phänomene können politische Entscheidungsträger Strategien entwickeln, um ihren negativen Auswirkungen auf demokratische Prozesse entgegenzuwirken und die Informationsintegrität zu verbessern. LLMs haben auch das Potenzial, bei der Vorhersage von Wahlergebnissen und politischen Reaktionen zu helfen und Entscheidungsträgern wertvolle Erkenntnisse für die strategische Planung und Governance zu liefern.<br>
+<br>
+Während die aktuelle Literatur die potenziellen Vorteile von LLMs in der Politikwissenschaft hervorhebt, gibt es mehrere Bereiche für weitere Forschung, die das Verständnis und die Anwendung des Feldes verbessern könnten. Erstens müssen die ethischen Implikationen und Verzerrungen von LLMs untersucht werden. Da diese Modelle mit riesigen Datenmengen trainiert werden, einschließlich potenziell verzerrter Quellen, ist es von entscheidender Bedeutung, sicherzustellen, dass die von LLMs generierten Ergebnisse keine gesellschaftlichen Ungleichheiten aufrechterhalten oder bestehende Verzerrungen verstärken. Forscher sollten Methoden zur Minderung von Voreingenommenheit und Diskriminierung in LLMs erforschen, um Fairness und Gerechtigkeit in ihren Bewerbungen zu gewährleisten.<br>
+<br>
+Zweitens sind weitere Studien erforderlich, um die Grenzen und potenziellen Fallstricke von LLMs in der politikwissenschaftlichen Forschung zu verstehen. Obwohl diese Modelle leistungsstarke Werkzeuge sind, sind sie nicht ohne Mängel. Die Genauigkeit der Ausgaben hängt stark von der Qualität und Vielfalt der Eingabedaten ab. Forscher sollten die potenziellen Risiken untersuchen, die sich daraus ergeben, dass sie sich bei der Entscheidungsfindung und Politikentwicklung ausschließlich auf LLMs verlassen. Es ist wichtig, die Robustheit und Zuverlässigkeit von LLMs in verschiedenen politischen Kontexten zu bewerten und die Grenzen dieser Modelle bei der Interpretation ihrer Ergebnisse zu berücksichtigen.<br>
+<br>
+Schließlich sollte sich die zukünftige Forschung auf Möglichkeiten konzentrieren, die Interpretierbarkeit und Erklärbarkeit von LLMs in der Politikwissenschaft zu verbessern. Da diese Modelle immer komplexer und ausgefeilter werden, wird es schwierig zu verstehen, wie sie zu ihren Schlussfolgerungen kommen. Die Entwicklung von Methoden und Techniken, um LLMs interpretierbar und erklärbar zu machen, kann ihre Transparenz erhöhen und es Forschern und politischen Entscheidungsträgern ermöglichen, ihren Ergebnissen zu vertrauen und sie zu hinterfragen. Dies würde zu einem fundierteren und rechenschaftspflichtigeren Entscheidungsprozess beitragen.<br>
+<br>
+Zusammenfassend lässt sich sagen, dass die literatur zu LLMsn in der politikwissenschaft ihren immensen Wert für die gesellschaft verdeutlicht. Diese Modelle können helfen, den politischen Diskurs zu verstehen, Ergebnisse vorherzusagen und gesellschaftliche Herausforderungen anzugehen. Es ist jedoch weitere Forschung erforderlich, um ethische Bedenken auszuräumen, Einschränkungen zu verstehen und die Interpretierbarkeit zu verbessern. Durch die weitere Erforschung und Verfeinerung von LLMs können Forschende ihr volles Potenzial ausschöpfen und zu einer informierteren und gerechteren politischen Landschaft beitragen.</p>
+</section>
+</section>
+</section>
+<section id="methodik" class="level1">
+<h1>Methodik</h1>
+<section id="sentiment-analyse" class="level2">
+<h2 class="anchored" data-anchor-id="sentiment-analyse">Sentiment Analyse</h2>
+<p>Die Sentimentanalyse ist eine Methode der Textanalyse, die darauf abzielt, das Sentiment oder die Stimmung in einem Text zu erkennen und zu bewerten. Mithilfe eines Natural Language AI-Modells von <span class="citation" data-cites="sentiment.ai">Wiseman, Nydick, and Wisner (<a href="#ref-sentiment.ai" role="doc-biblioref">2022</a>)</span> wird jedem Artikel ein Sentiment Score zwischen -1 (sehr negativ) und 1 (sehr positiv) zugeordnet. Das AI-Modell analysiert dabei den Kontext, die verwendeten Wörter und die Satzstruktur, um das Sentiment des Textes zu ermitteln. Ein großer Vorteil der Sentimentanalyse mittels AI-Modells besteht in ihrer Effizienz und Skalierbarkeit. Im Vergleich zu manuellen Methoden ermöglicht sie die schnelle und automatisierte Analyse einer großen Anzahl von Artikeln, wodurch umfassendere Erkenntnisse über die mediale Wahrnehmung der Flüchtlingskrise gewonnen werden können. Zudem reduziert die Verwendung eines AI-Modells die Anfälligkeit für menschliche Vorurteile, da die Analyse objektiver und konsistenter erfolgt.</p>
+</section>
+<section id="lda" class="level2">
+<h2 class="anchored" data-anchor-id="lda">LDA</h2>
+<p>Die Methode des Themenclustering mit Latent Dirichlet Allocation (LDA) ist ein unüberwachtes Lernverfahren zur Themenmodellierung von Textdaten. Dabei werden ähnliche Artikel aufgrund ihrer thematischen Übereinstimmungen in Clustern zusammengefasst. LDA identifiziert latente Themen, die in den Artikeln verborgen sind, und ordnet jeden Artikel den entsprechenden Clustern zu. Die Methode basiert auf einer Wahrscheinlichkeitsverteilung, die es erlaubt, die thematischen Beziehungen in den Artikeln zu entdecken. Ein wesentlicher Vorteil von LDA besteht in seiner Flexibilität und Fähigkeit, neue und unerwartete Themen zu entdecken, ohne vorher definierte Kategorien zu benötigen. Dadurch kann LDA einen tieferen Einblick in die in den Artikeln behandelten Themen geben, die möglicherweise bei vorherigen manuellen Kategorisierungsansätzen unentdeckt geblieben wären. Zudem ermöglicht die Themenclustering-Analyse eine umfassendere und differenziertere Analyse der Berichterstattung über die Flüchtlingskrise, indem sie Artikel mit ähnlichen Schwerpunkten und Inhalten in thematischen Clustern zusammenfasst.</p>
+<section id="webscraping" class="level3">
+<h3 class="anchored" data-anchor-id="webscraping"><strong>Webscraping</strong></h3>
+<p>Die Datenerhebung für diese Hausarbeit erfolgte mittels Webscraping, einer automatisierten Technik zur Extraktion von Daten von Websites. Ziel war es, Artikel aus den Archiven zweier Online-Zeitungen, nämlich Bild Online und SPON, zu sammeln, um eine umfangreiche Datengrundlage für die Analyse der Entwicklung des Sentiments in der Berichterstattung über Flüchtlinge in Deutschland 2015/2016 zu schaffen.</p>
+<p>Das Webscraping bietet den Vorteil, eine große Menge an relevanten Artikeln aus den Archiven der Online-Zeitungen zu extrahieren, ohne dass dies manuell erfolgen muss. Es ermöglichte eine automatisierte Datenerhebung, wodurch Zeit und Aufwand eingespart werden können. Die gesammelten Artikel bilden eine unrepräsentative Stichprobe der medialen Berichterstattung über Flüchtlinge während der untersuchten Zeiträume, die als Basis für die weitere Analyse mittels Sentimentanalyse und Themenclustering dienten.</p>
+</section>
+</section>
+<section id="auswahl-der-zeitungen" class="level2">
+<h2 class="anchored" data-anchor-id="auswahl-der-zeitungen">Auswahl der Zeitungen</h2>
+<p>Diese Arbeit versucht, einen Vergleich anzubieten. Da ich vor allem an sichtbarer Veränderung interessiert bin, ergibt es Sinn, mindestens eine Zetung in das Datenset mit aufzunehmen, die einen besonders starken Rechtsruck anzeigen würde. Da es häufig schwierig sein kann, die tatsächliche editoriale Linie einer Zeitschrift zu definieren, beziehe ich mich bei dieser Einordnung auf die angenommene politische Ausrichtung der Leserschaft in Person der deutschen Bundestagsabgeordneten. <span class="citation" data-cites="Barthels2021Die">Barthels et al. (<a href="#ref-Barthels2021Die" role="doc-biblioref">2021</a>)</span> zeigt, dass Bild.de vor allem von rechtsgerichteten Parteien wie der AFD, CDU und FDP aufgerufen werde. SPON hingegen vor allem von Abgeordneten der Grünen, SPD und Linken. Allerdings werde der SPON auch von allen Parteien auf einem relativ hohen Niveau genutzt.</p>
+<p>Aus den Nutzungsstatistiken leite ich ab, dass der SPON als Nachrichtenorgan vor allem neutral angesehen wird und daher eine gute Basislinie für einen Vergleich zur eher rechtpopulistischen Linie der Bild darstellen soll.</p>
+</section>
+</section>
+<section id="ergebnisse" class="level1">
+<h1>Ergebnisse</h1>
+<section id="datenbasis" class="level2">
+<h2 class="anchored" data-anchor-id="datenbasis">Datenbasis</h2>
+<p>Die meisten Beobachtungen stammen aus den Feldern Politik/Ausland sowie Panorama. Durchschnittlich gibt es 3,5 Beobachtungen pro Tag mit einer Spannweite von 19, wobei der maximale Wert 19 Beobachtungen pro Tag beträgt. Mit Anfang des Septembers 2015 lässt sich ein erhöhtes Aufkommen an Artikeln erkennen, welches seinen Hochpunkt zwischen November und Dezember 2015 erreicht. Ursprünglich wurden alle Artikel, die verfügbar waren und aus Text bestanden (Bildstrecken oder Videos wurden nicht gescraped) gesammelt. Dieses Datenset wurde dann mit einem Stichwortfilter eingegrenzt. Nach diesen Stichwörtern wurde im Titel oder Text gesucht.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="htmlwidget-e96fa3fa4c52c221ce90" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-e96fa3fa4c52c221ce90">{"x":{"url":"med_zus_index.en_files/figure-html//widgets/widget_look_up_table.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="sentiment-analyse-1" class="level2">
+<h2 class="anchored" data-anchor-id="sentiment-analyse-1">Sentiment Analyse</h2>
+<p>Ausgehend von der Birkner u. a. (2020) ausgeführten Zeitreihe definiere ich meinen Untersuchungszeitraum um diese zwei Events herum. Er beginnt Juli 2015 und endet im März 2016. Es umfasst damit die 9 beiden relevanten Ereignisse, den ‘Wir schaffen das!’-Auspruch von Angela Merkel Ende August 2015 und die Sylvesternacht in Köln mit genug Nachlauf, um Trendveränderungen erkennen zu können. Eine einfache Zeitreihe lässt einen negativen Trend erkennen. Der Sommer 2015 beginnt relativ positiv. Diese Einstellung nimmt jedoch bis April 2016 ab. Die Bildzeitung macht dabei einen deutlich stärkeren Wandel durch. SPON, wenn auch mit einem leicht negativen Trend verändert sich in Sentiment kaum. Teilweise wird hier Haller (2017) bestätigt. Beide Zeitungen erleben eine wahrnehmbare negative Veränderung. Begann der Trend für die Bildzeitung im beobachteten Zeitraum bei etwas über 0,15, findet er sich am Ende bei etwas unter 0,1. Über alle Themen hinweg hat das durchschnittliche Sentiment damit um über 5%</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-38eaa4d54f62f1aedd38" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-38eaa4d54f62f1aedd38">{"x":{"url":"med_zus_index.en_files/figure-html//widgets/widget_topic_unspec.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="topic-modelling-lda" class="level2">
+<h2 class="anchored" data-anchor-id="topic-modelling-lda">Topic Modelling (LDA)</h2>
+<p>Zur tieferen Betrachtung der Sentimentanalyse werden die Texte mittels LDA-Modelling in Themen eingeteilt. Dies geschieht mittels einer unbeaufsichtigten Lernmethode. Zur Auswahl der Menge an Clustern wurden und Koherenz als entscheidende Faktoren für Interpretierbarkeit herangezogen. Ich habe mich am Ende für 4 Cluster entschieden.</p>
+<p>Von den 4 Clustern sind zumindest 3 gut interpretierbar. Auf Grundlage der genannten hoch korrelierten Wörter habe ich die 4 Themen ‘Rechtsextremismus’, ‘Islamischer Terrorismus’, ‘Europäische Flüchtlingskrise’ und ‘US-Wahl’ benannt.</p>
+<p>Mittels der Clusterergebnisse lassen sich nun die Sentimente aufgeteilt nach Thema ploten und ihre individuelle Entwicklung beobachten. Tatsächlich lässt sich erkennen, dass vor allem im Thema ‘Europäische Flüchtlingskrise’ das Sentiment im beobachteten Zeitraum extrem gesunken ist. Diese Beobachtung gilt für beide beobachteten Medien. Die anderen Themen sind von dieser Entwicklung weitestgehend unbetroffen. Zwar gibt es auch im Bereich des islamistischen Terrors eine negative Entwicklung, jedoch nur auf Seiten der Bildzeitung</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-78f09ea08ccbd36450f3" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-78f09ea08ccbd36450f3">{"x":{"url":"med_zus_index.en_files/figure-html//widgets/widget_topic_specific.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="quantitative-narrativ-erfassung" class="level2">
+<h2 class="anchored" data-anchor-id="quantitative-narrativ-erfassung">Quantitative Narrativ Erfassung</h2>
+<section id="verbundene-akteure-und-orte" class="level3">
+<h3 class="anchored" data-anchor-id="verbundene-akteure-und-orte">Verbundene Akteure und Orte</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-66162250e8384764fb85" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-66162250e8384764fb85">{"x":{"url":"med_zus_index.en_files/figure-html//widgets/widget_net_actors.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="verbundene-akteure-und-verben" class="level3">
+<h3 class="anchored" data-anchor-id="verbundene-akteure-und-verben">Verbundene Akteure und Verben</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-a740b331b0410e551a6a" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-a740b331b0410e551a6a">{"x":{"url":"med_zus_index.en_files/figure-html//widgets/widget_verbs.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="verbundene-akteure-und-adjektive" class="level3">
+<h3 class="anchored" data-anchor-id="verbundene-akteure-und-adjektive">Verbundene Akteure und Adjektive</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-66cea6d86cb98d790def" style="width:100%;height:480px;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-66cea6d86cb98d790def">{"x":{"url":"med_zus_index.en_files/figure-html//widgets/widget_adj.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="fazit-2" class="level1">
+<h1>Fazit</h1>
+<p>Diese Hausarbeit hat es sich zum Ziel gemacht, vor dem Hintergrund der Flüchtlingskrise von 2015 bis 2016 mittels eines Natural Language Models die Sentimententwicklung von Artikeln der beiden Onlineausgaben der Leitmedien SPON und Bild zu untersuchen. Dies sollte dem Zweck dienen, Erkenntnisse von z.B. <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> mit anderen Methoden zu überprüfen. Mittels Topic Modelling wurden die Texte in die 4 überordnenden Themen ‘Rechtsextremismus’, ‘Islamischer Terrorismus’, ‘Europäische Flüchtlingskrise’ und ‘US-Wahl’ eingeteilt. Dabei lässt sich erkennen, dass der generelle Trend vom Sommer 2015 bis Frühjahr 2016 merklich gesunken ist. Der Beobachtungszeitraum beginnt im Sommer 2015 mit einer leicht positiven Tendenz, nimmt im Verlauf des Jahres aber weiterhin ab und ist am Ende des Zeitraums in das leicht negative gekippt. Überraschend ist, dass sich dieser Trend in beiden Publikationen nahezu identisch wiederfindet.</p>
+<p>Diese Ergebnisse sind stimmig mit anderer Forschung wie etwa <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span>. Diese fanden ebenfalls für den Anfangszeitraum eine vor allem positive Stimmung vor und heben dabei besonders das Narrativ der ‘Willkommens Kultur’ hervor (Ebd. S. 99). Ebenso beschreiben sie, dass während der Berichterstattung häufig die Positionen der politischen Eliten wiedergegeben wurden und diese dadurch dem Theorem der Agenda Setting folgend besonders viel Platz im öffentlichen Diskurs eingeräumt bekamen (Ebd. S. 134). Nachdem wir gezeigt haben, dass das sich wandelnde Sentiment tatsächlich reproduzierbar zu zeigen ist, könnte dies ein erster Schritt sein, eine Beobachtung wie der von <span class="citation" data-cites="entman2003">Robert M. Entman (<a href="#ref-entman2003" role="doc-biblioref">2003</a>)</span> beschriebene Kaskadeneffekt nachzuweisen. <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> beobachtungen bezüglich der bezogenen Quellen der Leitmedien geben ebenfalls bereits starke Hinweise auf diese Vermutung.</p>
+<p>Daraus lässt sich eine interessante These ableiten, die es in den folgenden Studien zu überprüfen gilt. Wie <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span> beschreibt, waren die von <span class="citation" data-cites="entman2003">Robert M. Entman (<a href="#ref-entman2003" role="doc-biblioref">2003</a>)</span> beschriebenen Kaskadeneffekte über den gesamten Zeitraum zu beobachten. Allerdings haben sich die politischen Orientierungen der befragten politischen Eliten von den Regierungsparteien überproportional zur AfD verändert. In diesem Zusammenhang muss die Frage erlaubt sein, ob der Stimmungsumschwung gegenüber den nach Deutschland kommenden Flüchtlingen nicht vor allem durch die Medien beeinflusst wurde und damit das Erstarken rechter Parteien in Deutschland.</p>
+<p>Weiterhin zeigt diese Arbeit, dass automatisierte Textverarbeitung schnelle und effiziente Studien mit tausenden Textdokumenten als Datengrundlage deutlich vereinfacht. Gerade unter dem Thema Open Data kann dies ein entscheidender Fortschritt in der Sozial- und Medienwissenschaftlichen Forschung sein. Mit Blick auf die Zukunft wäre es allerdings wünschenswert, spezifischere Modelle zur Verfügung zu haben, deren Trainingssets öffentlich einsehbar sind. Denn obwohl die Berechnungen des AI-Modells durchaus schlüssig sind, ist es am Ende unmöglich zu interpretieren, warum das Model zu dem Schluss kam, zu dem es gegkommen ist. Zudem sollten generelle Standards im Umgang mit schwer interpretierbaren Machine-Learning Modellen gefördert und genauso gelehrt werden. An dieser Stelle muss von Forschungsseite dringend nachgebessert werden.</p>
+<p>Weiterführende Arbeiten könnten sich mit der Analyse der Akteure innerhalb der Artikel, die in diesem Datenset gesammelt wurden, beschäftigen, um die Erkenntnisse von <span class="citation" data-cites="haller2017fluchtlingskrise">Haller (<a href="#ref-haller2017fluchtlingskrise" role="doc-biblioref">2017</a>)</span>, dass die meisten Quellen oftmals aus politischen Eliten stammen, zu überprüfen. Auch dies sollte mit Machine-Learning-Modellen effizient zu gestalten sein.</p>
+</section>
+<section id="packagenutzung" class="level1 unlisted unnumbered">
+<h1 class="unlisted unnumbered">Packagenutzung</h1>
+<p>Für Datentransformation und das Erstellen von Plots wurde das Tidyverse-Package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span> )benutzt. Webscraping wurde mit hilfe des Rvest Packages durchgeführt <span class="citation" data-cites="rvest">(<a href="#ref-rvest" role="doc-biblioref">Wickham 2022</a>)</span>. Sentimentanalysen wurden mit Sentiment.ai <span class="citation" data-cites="sentiment.ai">(<a href="#ref-sentiment.ai" role="doc-biblioref">Wiseman, Nydick, and Wisner 2022</a>)</span> durchgeführt. Topic Modelling wurde mit den Libraries von <span class="citation" data-cites="quanteda">Benoit et al. (<a href="#ref-quanteda" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="stm">Roberts, Stewart, and Tingley (<a href="#ref-stm" role="doc-biblioref">2019</a>)</span> und <span class="citation" data-cites="topicmodels">Grün and Hornik (<a href="#ref-topicmodels" role="doc-biblioref">2023</a>)</span> erstellt. Tabellen wurden mit <span class="citation" data-cites="vtable">Huntington-Klein (<a href="#ref-vtable" role="doc-biblioref">2023</a>)</span> erstellt. Da das Scrapen und Auswerten mittels AI Model sehr lange dauert, möchte ich auch besonders <span class="citation" data-cites="progress">Csárdi and FitzJohn (<a href="#ref-progress" role="doc-biblioref">2019</a>)</span> erwähnen, welche mir das Leben stark durch einen einfachen Progress Bar sehr vereinfacht haben.</p>
+</section>
+<section id="literaturverzeichnis" class="level1 unlisted unnumbered">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Literaturverzeichnis</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Barthels2021Die" class="csl-entry" role="listitem">
+Barthels, Inga, Benedikt Brandhofer, Jesse Lehrke, Helena Wittlich, Finn Müller-Hansen, and Hendrik Lehmann. 2021. <span>“Die <span>Lieblingsmedien</span> Der <span>Parteien</span> Im <span>Bundestag</span>.”</span> https://interaktiv.tagesspiegel.de/lab/die-lieblingsmedien-der-parteien/.
+</div>
+<div id="ref-quanteda" class="csl-entry" role="listitem">
+Benoit, Kenneth, Kohei Watanabe, Haiyan Wang, Paul Nulty, Adam Obeng, Stefan Müller, and Akitaka Matsuo. 2018. <span>“Quanteda: An r Package for the Quantitative Analysis of Textual Data”</span> 3: 774. <a href="https://doi.org/10.21105/joss.00774">https://doi.org/10.21105/joss.00774</a>.
+</div>
+<div id="ref-Birkner2020Der" class="csl-entry" role="listitem">
+Birkner, Thomas, Daniel König, Sebastian Mallek, Niklas Näsemann, and Kirsten Specking. 2020. <span>“Der <span>Fall</span> <span>Angela</span> <span>Merkel</span> Und Die ’<span>Fl</span><span>ü</span>chtlingskrise’ Seit 2015.”</span> In <em>Krisenkommunikation Komplex: 11 <span>Analysen</span> Prominenter <span>F</span><span>ä</span>lle Mit Medialer <span>Einordnung</span> Und <span>Nachbetrachtung</span> Beteiligter <span>Experten</span></em>, edited by Jana Wiske. K<span>ö</span>ln: Herbert von Halem Verlag.
+</div>
+<div id="ref-Blei2003Latent" class="csl-entry" role="listitem">
+Blei, D. M., A. Y. Ng, and M. I. Jordan. 2003. <span>“Latent <span>Dirichlet</span> <span>Allocation</span>.”</span> <em>Journal Of Machine Learning Research</em> 3 (January): 993–1022.
+</div>
+<div id="ref-progress" class="csl-entry" role="listitem">
+Csárdi, Gábor, and Rich FitzJohn. 2019. <span>“Progress: Terminal Progress Bars.”</span> <a href="https://CRAN.R-project.org/package=progress">https://CRAN.R-project.org/package=progress</a>.
+</div>
+<div id="ref-Entman1993Framing" class="csl-entry" role="listitem">
+Entman, R. M. 1993. <span>“Framing: Toward <span>Clarification</span> of a <span>Fractured</span> <span>Paradigm</span>.”</span> <em>Journal of Communication</em> 43 (4): 51–58.
+</div>
+<div id="ref-entman2003" class="csl-entry" role="listitem">
+Entman, Robert M. 2003. <span>“Cascading Activation: Contesting the White House’s Frame After 9/11.”</span> <em>Political Communication</em> 20 (4): 415–32. <a href="https://doi.org/10.1080/10584600390244176">https://doi.org/10.1080/10584600390244176</a>.
+</div>
+<div id="ref-Fraser1995From" class="csl-entry" role="listitem">
+Fraser, N. 1995a. <span>“From Redistribution to Recognition? <span>Dilemmas</span> of Justice in a ’Post-Socialist’ Age.”</span> <em>New Left Review</em> 212: 68–93.
+</div>
+<div id="ref-Fraser1995Recognition" class="csl-entry" role="listitem">
+———. 1995b. <span>“Recognition or <span>Redistribution</span>? <span>A</span> <span>Critical</span> <span>Reading</span> of <span>Iris</span> <span>Young</span>’<span>sJustice</span> and the <span>Politics</span> of <span>Difference</span>*.”</span> <em>Journal of Political Philosophy</em> 3 (2): 166–80.
+</div>
+<div id="ref-Fraser2001Recognition" class="csl-entry" role="listitem">
+———. 2001. <span>“Recognition Without <span>Ethics</span>?”</span> <em>Theory, Culture &amp; Society</em> 18 (2-3): 21–42.
+</div>
+<div id="ref-Grimmer2011General" class="csl-entry" role="listitem">
+Grimmer, J., and G. King. 2011. <span>“General Purpose Computer-Assisted Clustering and Conceptualization.”</span> <em>Proceedings of the National Academy of Sciences</em> 108 (7): 2643–50.
+</div>
+<div id="ref-Grimmer2013Text" class="csl-entry" role="listitem">
+Grimmer, J., and B. M. Stewart. 2013. <span>“Text as <span>Data</span>: The <span>Promise</span> and <span>Pitfalls</span> of <span>Automatic</span> <span>Content</span> <span>Analysis</span> <span>Methods</span> for <span>Political</span> <span>Texts</span>.”</span> <em>Political Analysis</em> 21 (3): 267–97.
+</div>
+<div id="ref-topicmodels" class="csl-entry" role="listitem">
+Grün, Bettina, and Kurt Hornik. 2023. <span>“Topicmodels: Topic Models.”</span> <a href="https://CRAN.R-project.org/package=topicmodels">https://CRAN.R-project.org/package=topicmodels</a>.
+</div>
+<div id="ref-Habermas1998Between" class="csl-entry" role="listitem">
+Habermas, J., and J. Habermas. 1998. <em>Between <span>Facts</span> and <span>Norms</span></em>. Mit Press.
+</div>
+<div id="ref-haller2017fluchtlingskrise" class="csl-entry" role="listitem">
+Haller, Michael. 2017. <span>“Die „Fl<span>ü</span>chtlingskrise “in Den Medien.”</span> <em>The Refugee Crisis in the Media], OBS-Arbeitsheft</em> 93.
+</div>
+<div id="ref-Hallin2004Comparing" class="csl-entry" role="listitem">
+Hallin, D. C., and P. Mancini. 2004. <span>“Comparing <span>Media</span> <span>Systems</span>.”</span>
+</div>
+<div id="ref-Honneth2001Recognition" class="csl-entry" role="listitem">
+Honneth, A. 2001. <span>“Recognition or <span>Redistribution</span>?”</span> <em>Theory, Culture &amp; Society</em> 18 (2-3): 43–55.
+</div>
+<div id="ref-Hopkins2010Method" class="csl-entry" role="listitem">
+Hopkins, D. J., and G. King. 2010. <span>“A <span>Method</span> of <span>Automated</span> <span>Nonparametric</span> <span>Content</span> <span>Analysis</span> for <span>Social</span> <span>Science</span>.”</span> <em>American Journal of Political Science</em> 54 (1): 229–47.
+</div>
+<div id="ref-vtable" class="csl-entry" role="listitem">
+Huntington-Klein, Nick. 2023. <span>“Vtable: Variable Table for Variable Documentation.”</span> <a href="https://CRAN.R-project.org/package=vtable">https://CRAN.R-project.org/package=vtable</a>.
+</div>
+<div id="ref-jarren2011" class="csl-entry" role="listitem">
+Jarren, Otfried, and Martina Vogel. 2011<span>“<span>,,</span>Leitmedien<span>“</span> Als Qualitätsmedien. Theoretisches Konzept Und Indikatoren.”</span> In, 17–29. VS Verlag für Sozialwissenschaften. <a href="https://doi.org/10.1007/978-3-531-93084-8_2">https://doi.org/10.1007/978-3-531-93084-8_2</a>.
+</div>
+<div id="ref-Laver2003Extracting" class="csl-entry" role="listitem">
+Laver, Michael, Kenneth Benoit, and John Garry. 2003. <span>“Extracting <span>Policy</span> <span>Positions</span> from <span>Political</span> <span>Texts</span> <span>Using</span> <span>Words</span> as <span>Data</span>.”</span> <em>American Political Science Review</em> 97 (02).
+</div>
+<div id="ref-mccombs1972agenda" class="csl-entry" role="listitem">
+McCombs, Maxwell E, and Donald L Shaw. 1972. <span>“The Agenda-Setting Function of Mass Media.”</span> <em>Public Opinion Quarterly</em> 36 (2): 176–87.
+</div>
+<div id="ref-Mouffe2000Democratic" class="csl-entry" role="listitem">
+Mouffe, C. 2000. <em>The <span>Democratic</span> <span>Paradox</span></em>. Verso.
+</div>
+<div id="ref-Mouffe1999Deliberative" class="csl-entry" role="listitem">
+Mouffe, Chantal. 1999. <span>“Deliberative Democracy or Agonistic Pluralism?”</span> <em>Social Research</em> 67 (3): 745–58.
+</div>
+<div id="ref-Norris2000Virtuous" class="csl-entry" role="listitem">
+Norris, P. 2000. <span>“A <span>Virtuous</span> <span>Circle</span>.”</span>
+</div>
+<div id="ref-Norris2019Cultural" class="csl-entry" role="listitem">
+Norris, P., and R. Inglehart. 2019. <span>“Cultural <span>Backlash</span>.”</span>
+</div>
+<div id="ref-stm" class="csl-entry" role="listitem">
+Roberts, Margaret E., Brandon M. Stewart, and Dustin Tingley. 2019. <span>“<span></span>Stm<span></span>: An <span></span>r<span></span> Package for Structural Topic Models”</span> 91. <a href="https://doi.org/10.18637/jss.v091.i02">https://doi.org/10.18637/jss.v091.i02</a>.
+</div>
+<div id="ref-Taylor1995Politics" class="csl-entry" role="listitem">
+Taylor, C. 1995. <span>“The <span>Politics</span> of <span>Recognition</span>.”</span> <em>Multiculturalism</em>, 25–74.
+</div>
+<div id="ref-rvest" class="csl-entry" role="listitem">
+Wickham, Hadley. 2022. <span>“Rvest: Easily Harvest (Scrape) Web Pages.”</span> <a href="https://CRAN.R-project.org/package=rvest">https://CRAN.R-project.org/package=rvest</a>.
+</div>
+<div id="ref-tidyverse" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the <span></span>Tidyverse<span></span>”</span> 4: 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
+<div id="ref-sentiment.ai" class="csl-entry" role="listitem">
+Wiseman, Ben, Steven Nydick, and Tristan Wisner. 2022. <span>“Sentiment.ai: Simple Sentiment Analysis Using Deep Learning.”</span> <a href="https://CRAN.R-project.org/package=sentiment.ai">https://CRAN.R-project.org/package=sentiment.ai</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
