@@ -1,4 +1,1101 @@
 {
-    "sources": [],
+    "sources": [
+        {
+            "URL": "https://CRAN.R-project.org/package=SentimentAnalysis",
+            "author": [
+                {
+                    "family": "Proellochs",
+                    "given": "Nicolas"
+                },
+                {
+                    "family": "Feuerriegel",
+                    "given": "Stefan"
+                }
+            ],
+            "id": "SentimentAnalysis",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "SentimentAnalysis: Dictionary-based sentiment analysis",
+            "title-short": "SentimentAnalysis",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=sentiment.ai",
+            "author": [
+                {
+                    "family": "Wiseman",
+                    "given": "Ben"
+                },
+                {
+                    "family": "Nydick",
+                    "given": "Steven"
+                },
+                {
+                    "family": "Wisner",
+                    "given": "Tristan"
+                }
+            ],
+            "id": "sentiment.ai",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Sentiment.ai: Simple sentiment analysis using deep learning",
+            "title-short": "Sentiment.ai",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://github.com/trinker/sentimentr",
+            "author": [
+                {
+                    "family": "Rinker",
+                    "given": "Tyler W."
+                }
+            ],
+            "id": "sentimentr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Sentimentr: Calculate text polarity sentiment",
+            "title-short": "Sentimentr",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.21105/joss.01686",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Averick",
+                    "given": "Mara"
+                },
+                {
+                    "family": "Bryan",
+                    "given": "Jennifer"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "McGowan",
+                    "given": "Lucy D’Agostino"
+                },
+                {
+                    "family": "François",
+                    "given": "Romain"
+                },
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                },
+                {
+                    "family": "Hayes",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Henry",
+                    "given": "Lionel"
+                },
+                {
+                    "family": "Hester",
+                    "given": "Jim"
+                },
+                {
+                    "family": "Kuhn",
+                    "given": "Max"
+                },
+                {
+                    "family": "Pedersen",
+                    "given": "Thomas Lin"
+                },
+                {
+                    "family": "Miller",
+                    "given": "Evan"
+                },
+                {
+                    "family": "Bache",
+                    "given": "Stephan Milton"
+                },
+                {
+                    "family": "Müller",
+                    "given": "Kirill"
+                },
+                {
+                    "family": "Ooms",
+                    "given": "Jeroen"
+                },
+                {
+                    "family": "Robinson",
+                    "given": "David"
+                },
+                {
+                    "family": "Seidel",
+                    "given": "Dana Paige"
+                },
+                {
+                    "family": "Spinu",
+                    "given": "Vitalie"
+                },
+                {
+                    "family": "Takahashi",
+                    "given": "Kohske"
+                },
+                {
+                    "family": "Vaughan",
+                    "given": "Davis"
+                },
+                {
+                    "family": "Wilke",
+                    "given": "Claus"
+                },
+                {
+                    "family": "Woo",
+                    "given": "Kara"
+                },
+                {
+                    "family": "Yutani",
+                    "given": "Hiroaki"
+                }
+            ],
+            "id": "tidyverse",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "1686",
+            "title": "Welcome to the tidyverse",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=rvest",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "rvest",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Rvest: Easily harvest (scrape) web pages",
+            "title-short": "Rvest",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=rvest",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "rvest",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Rvest: Easily harvest (scrape) web pages",
+            "title-short": "Rvest",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1093/ijpor/edy022",
+            "URL": "http://dx.doi.org/10.1093/ijpor/edy022",
+            "author": [
+                {
+                    "family": "Hameleers",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "International Journal of Public Opinion Research",
+            "id": "hameleers2018",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        11,
+                        29
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "485-505",
+            "title": "Partisan Media, Polarized Audiences? A Qualitative Analysis of Online Political News and Responses in the United States, U.K., and The Netherlands",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "author": [
+                {
+                    "family": "Haller",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "The refugee crisis in the media], OBS-Arbeitsheft",
+            "id": "haller2017fluchtlingskrise",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "title": "Die „flüchtlingskrise “in den medien",
+            "type": "article-journal",
+            "volume": "93"
+        },
+        {
+            "author": [
+                {
+                    "family": "McCombs",
+                    "given": "Maxwell E"
+                },
+                {
+                    "family": "Shaw",
+                    "given": "Donald L"
+                }
+            ],
+            "container-title": "Public opinion quarterly",
+            "id": "mccombs1972agenda",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1972
+                    ]
+                ]
+            },
+            "page": "176-187",
+            "publisher": "Oxford University Press",
+            "title": "The agenda-setting function of mass media",
+            "type": "article-journal",
+            "volume": "36"
+        },
+        {
+            "DOI": "10.1080/10584600390244176",
+            "URL": "http://dx.doi.org/10.1080/10584600390244176",
+            "author": [
+                {
+                    "family": "Entman",
+                    "given": "Robert M."
+                }
+            ],
+            "container-title": "Political Communication",
+            "id": "entman2003",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "415-432",
+            "title": "Cascading Activation: Contesting the White House’s Frame After 9/11",
+            "title-short": "Cascading Activation",
+            "type": "article-journal",
+            "volume": "20"
+        },
+        {
+            "author": [
+                {
+                    "family": "Birkner",
+                    "given": "Thomas"
+                },
+                {
+                    "family": "König",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Mallek",
+                    "given": "Sebastian"
+                },
+                {
+                    "family": "Näsemann",
+                    "given": "Niklas"
+                },
+                {
+                    "family": "Specking",
+                    "given": "Kirsten"
+                }
+            ],
+            "container-title": "Krisenkommunikation komplex: 11 Analysen prominenter Fälle mit medialer Einordnung und Nachbetrachtung beteiligter Experten",
+            "editor": [
+                {
+                    "family": "Wiske",
+                    "given": "Jana"
+                }
+            ],
+            "id": "Birkner2020Der",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "Herbert von Halem Verlag",
+            "publisher-place": "Köln",
+            "title": "Der Fall Angela Merkel und die ’Flüchtlingskrise’ seit 2015",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.21105/joss.00774",
+            "URL": "https://quanteda.io",
+            "author": [
+                {
+                    "family": "Benoit",
+                    "given": "Kenneth"
+                },
+                {
+                    "family": "Watanabe",
+                    "given": "Kohei"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Haiyan"
+                },
+                {
+                    "family": "Nulty",
+                    "given": "Paul"
+                },
+                {
+                    "family": "Obeng",
+                    "given": "Adam"
+                },
+                {
+                    "family": "Müller",
+                    "given": "Stefan"
+                },
+                {
+                    "family": "Matsuo",
+                    "given": "Akitaka"
+                }
+            ],
+            "id": "quanteda",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "774",
+            "title": "Quanteda: An r package for the quantitative analysis of textual data",
+            "title-short": "Quanteda",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "DOI": "10.18637/jss.v091.i02",
+            "author": [
+                {
+                    "family": "Roberts",
+                    "given": "Margaret E."
+                },
+                {
+                    "family": "Stewart",
+                    "given": "Brandon M."
+                },
+                {
+                    "family": "Tingley",
+                    "given": "Dustin"
+                }
+            ],
+            "id": "stm",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "Stm: An r package for structural topic models",
+            "title-short": "Stm",
+            "type": "article-journal",
+            "volume": "91"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=topicmodels",
+            "author": [
+                {
+                    "family": "Grün",
+                    "given": "Bettina"
+                },
+                {
+                    "family": "Hornik",
+                    "given": "Kurt"
+                }
+            ],
+            "id": "topicmodels",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "Topicmodels: Topic models",
+            "title-short": "Topicmodels",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=vtable",
+            "author": [
+                {
+                    "family": "Huntington-Klein",
+                    "given": "Nick"
+                }
+            ],
+            "id": "vtable",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "Vtable: Variable table for variable documentation",
+            "title-short": "Vtable",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=progress",
+            "author": [
+                {
+                    "family": "Csárdi",
+                    "given": "Gábor"
+                },
+                {
+                    "family": "FitzJohn",
+                    "given": "Rich"
+                }
+            ],
+            "id": "progress",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "Progress: Terminal progress bars",
+            "title-short": "Progress",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/978-3-531-93084-8_2",
+            "URL": "http://dx.doi.org/10.1007/978-3-531-93084-8_2",
+            "author": [
+                {
+                    "family": "Jarren",
+                    "given": "Otfried"
+                },
+                {
+                    "family": "Vogel",
+                    "given": "Martina"
+                }
+            ],
+            "id": "jarren2011",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "17-29",
+            "publisher": "VS Verlag für Sozialwissenschaften",
+            "title": ",,Leitmedien“ als qualitätsmedien. Theoretisches konzept und indikatoren",
+            "type": "chapter"
+        },
+        {
+            "author": [
+                {
+                    "family": "Barthels",
+                    "given": "Inga"
+                },
+                {
+                    "family": "Brandhofer",
+                    "given": "Benedikt"
+                },
+                {
+                    "family": "Lehrke",
+                    "given": "Jesse"
+                },
+                {
+                    "family": "Wittlich",
+                    "given": "Helena"
+                },
+                {
+                    "family": "Müller-Hansen",
+                    "given": "Finn"
+                },
+                {
+                    "family": "Lehmann",
+                    "given": "Hendrik"
+                }
+            ],
+            "id": "Barthels2021Die",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "note": "[Online; accessed 2023-08-11]",
+            "publisher": "https://interaktiv.tagesspiegel.de/lab/die-lieblingsmedien-der-parteien/",
+            "title": "Die Lieblingsmedien der Parteien im Bundestag",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "literal": "Infratest Dimap"
+                }
+            ],
+            "id": "Infratest2024Sonntagsfrage",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        8
+                    ]
+                ]
+            },
+            "note": "[Online; accessed 2023-08-19]",
+            "publisher": "https://www.infratest-dimap.de/umfragen-analysen/bundesweit/sonntagsfrage/",
+            "title": "Sonntagsfrage",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Grimmer",
+                    "given": "J."
+                },
+                {
+                    "family": "King",
+                    "given": "G."
+                }
+            ],
+            "container-title": "Proceedings of the National Academy of Sciences",
+            "id": "Grimmer2011General",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "2643-2650",
+            "publisher": "Proceedings of the National Academy of Sciences",
+            "title": "General purpose computer-assisted clustering and conceptualization",
+            "type": "article-journal",
+            "volume": "108"
+        },
+        {
+            "author": [
+                {
+                    "family": "Hopkins",
+                    "given": "D. J."
+                },
+                {
+                    "family": "King",
+                    "given": "G."
+                }
+            ],
+            "container-title": "American Journal of Political Science",
+            "id": "Hopkins2010Method",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010,
+                        1
+                    ]
+                ]
+            },
+            "page": "229-247",
+            "publisher": "Wiley",
+            "title": "A Method of Automated Nonparametric Content Analysis for Social Science",
+            "type": "article-journal",
+            "volume": "54"
+        },
+        {
+            "author": [
+                {
+                    "family": "Laver",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Benoit",
+                    "given": "Kenneth"
+                },
+                {
+                    "family": "Garry",
+                    "given": "John"
+                }
+            ],
+            "container-title": "American Political Science Review",
+            "id": "Laver2003Extracting",
+            "issue": "02",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003,
+                        5
+                    ]
+                ]
+            },
+            "publisher": "Cambridge University Press (CUP)",
+            "title": "Extracting Policy Positions from Political Texts Using Words as Data",
+            "type": "article-journal",
+            "volume": "97"
+        },
+        {
+            "container-title": "Econometrica",
+            "id": "2010What",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ]
+            },
+            "page": "35-71",
+            "publisher": "The Econometric Society",
+            "title": "What Drives Media Slant? Evidence From U.S. Daily Newspapers",
+            "type": "article-journal",
+            "volume": "78"
+        },
+        {
+            "author": [
+                {
+                    "family": "Grimmer",
+                    "given": "J."
+                },
+                {
+                    "family": "Stewart",
+                    "given": "B. M."
+                }
+            ],
+            "container-title": "Political Analysis",
+            "id": "Grimmer2013Text",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "page": "267-297",
+            "publisher": "Cambridge University Press (CUP)",
+            "title": "Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts",
+            "title-short": "Text as Data",
+            "type": "article-journal",
+            "volume": "21"
+        },
+        {
+            "author": [
+                {
+                    "family": "Blei",
+                    "given": "D. M."
+                },
+                {
+                    "family": "Ng",
+                    "given": "A. Y."
+                },
+                {
+                    "family": "Jordan",
+                    "given": "M. I."
+                }
+            ],
+            "container-title": "Journal Of Machine Learning Research",
+            "id": "Blei2003Latent",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003,
+                        1
+                    ]
+                ]
+            },
+            "page": "993-1022",
+            "title": "Latent Dirichlet Allocation",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "author": [
+                {
+                    "family": "Honneth",
+                    "given": "A."
+                }
+            ],
+            "id": "Honneth2015Struggle",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "publisher": "John Wiley & Sons",
+            "title": "The Struggle for Recognition",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fraser",
+                    "given": "N."
+                }
+            ],
+            "container-title": "Journal of Political Philosophy",
+            "id": "Fraser1995Recognition",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995,
+                        6
+                    ]
+                ]
+            },
+            "page": "166-180",
+            "publisher": "Wiley",
+            "title": "Recognition or Redistribution? A Critical Reading of Iris Young’sJustice and the Politics of Difference*",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "author": [
+                {
+                    "family": "McCombs",
+                    "given": "M. E."
+                },
+                {
+                    "family": "Shaw",
+                    "given": "D. L."
+                }
+            ],
+            "container-title": "Public Opinion Quarterly",
+            "id": "McCombs1972Agenda",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1972
+                    ]
+                ]
+            },
+            "page": "176-187",
+            "publisher": "Oxford University Press (OUP)",
+            "title": "The Agenda-Setting Function of Mass Media",
+            "type": "article-journal",
+            "volume": "36"
+        },
+        {
+            "author": [
+                {
+                    "family": "Hallin",
+                    "given": "D. C."
+                },
+                {
+                    "family": "Mancini",
+                    "given": "P."
+                }
+            ],
+            "id": "Hallin2004Comparing",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "publisher": "Cambridge University Press",
+            "title": "Comparing Media Systems",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Entman",
+                    "given": "R. M."
+                }
+            ],
+            "container-title": "Journal of Communication",
+            "id": "Entman1993Framing",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1993
+                    ]
+                ]
+            },
+            "page": "51-58",
+            "publisher": "Oxford University Press (OUP)",
+            "title": "Framing: Toward Clarification of a Fractured Paradigm",
+            "title-short": "Framing",
+            "type": "article-journal",
+            "volume": "43"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fraser",
+                    "given": "N."
+                },
+                {
+                    "family": "Honneth",
+                    "given": "A."
+                }
+            ],
+            "id": "Fraser2003Redistribution",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ]
+            },
+            "publisher": "Verso",
+            "title": "Redistribution Or Recognition?",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Mouffe",
+                    "given": "C."
+                }
+            ],
+            "id": "Mouffe2000Democratic",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000
+                    ]
+                ]
+            },
+            "publisher": "Verso",
+            "title": "The Democratic Paradox",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Norris",
+                    "given": "P."
+                },
+                {
+                    "family": "Inglehart",
+                    "given": "R."
+                }
+            ],
+            "id": "Norris2019Cultural",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "publisher": "Cambridge University Press",
+            "title": "Cultural Backlash",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Honneth",
+                    "given": "A."
+                }
+            ],
+            "container-title": "Theory, Culture & Society",
+            "id": "Honneth2001Recognition",
+            "issue": "2-3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2001,
+                        6
+                    ]
+                ]
+            },
+            "page": "43-55",
+            "publisher": "SAGE Publications",
+            "title": "Recognition or Redistribution?",
+            "type": "article-journal",
+            "volume": "18"
+        },
+        {
+            "author": [
+                {
+                    "family": "Taylor",
+                    "given": "C."
+                }
+            ],
+            "container-title": "Multiculturalism",
+            "id": "Taylor1995Politics",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995
+                    ]
+                ]
+            },
+            "page": "25-74",
+            "publisher": "Princeton University Press",
+            "title": "The Politics of Recognition",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fraser",
+                    "given": "N."
+                }
+            ],
+            "container-title": "New Left Review",
+            "id": "Fraser1995From",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995
+                    ]
+                ]
+            },
+            "page": "68-93",
+            "title": "From redistribution to recognition? Dilemmas of justice in a ’post-socialist’ age",
+            "type": "article-journal",
+            "volume": "212"
+        },
+        {
+            "author": [
+                {
+                    "family": "Mouffe",
+                    "given": "Chantal"
+                }
+            ],
+            "container-title": "Social Research",
+            "id": "Mouffe1999Deliberative",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1999
+                    ]
+                ]
+            },
+            "page": "745-758",
+            "title": "Deliberative democracy or agonistic pluralism?",
+            "type": "article-journal",
+            "volume": "67"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fraser",
+                    "given": "N."
+                }
+            ],
+            "container-title": "Theory, Culture & Society",
+            "id": "Fraser2001Recognition",
+            "issue": "2-3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2001,
+                        6
+                    ]
+                ]
+            },
+            "page": "21-42",
+            "publisher": "SAGE Publications",
+            "title": "Recognition without Ethics?",
+            "type": "article-journal",
+            "volume": "18"
+        },
+        {
+            "author": [
+                {
+                    "family": "Habermas",
+                    "given": "J."
+                },
+                {
+                    "family": "Habermas",
+                    "given": "J."
+                }
+            ],
+            "id": "Habermas1998Between",
+            "issued": {
+                "date-parts": [
+                    [
+                        1998
+                    ]
+                ]
+            },
+            "publisher": "Mit Press",
+            "title": "Between Facts and Norms",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Norris",
+                    "given": "P."
+                }
+            ],
+            "id": "Norris2000Virtuous",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000
+                    ]
+                ]
+            },
+            "publisher": "Cambridge University Press",
+            "title": "A Virtuous Circle",
+            "type": "article-journal"
+        }
+    ],
     "project_biblios": []
 }
