@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>PolitikPulse</title>
+<link>https://politikpulse.net/essays/index.html</link>
+<atom:link href="https://politikpulse.net/essays/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<image>
+<url>https://politikpulse.net/Owl.jpeg</url>
+<title>PolitikPulse</title>
+<link>https://politikpulse.net/essays/index.html</link>
+</image>
+<generator>quarto-1.3.433</generator>
+<lastBuildDate>Tue, 17 Oct 2023 13:55:24 GMT</lastBuildDate>
+</channel>
+</rss>

@@ -1,12 +1,32 @@
 [
   {
     "listing": "/index.html",
-    "items": [
-      "/posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.html",
+    "items": []
+  },
+  {
+    "listing": "/studies/index.html",
+    "items": [
+      "/studies/2023_10_LR_med_zus/index.html"
+    ]
+  },
+  {
+    "listing": "/studies/2023_10/med_zus/index.html",
+    "items": []
+  },
+  {
+    "listing": "/essays/index.html",
+    "items": []
+  },
+  {
+    "listing": "/studies/2023_10_LR_med_zus/index.html",
+    "items": []
+  },
+  {
+    "listing": "/latest_content.html",
     "items": []
   }
 ]

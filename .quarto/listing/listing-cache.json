@@ -1,7 +1,11 @@
 {
   "listingMap": {
     "index.qmd": [
-      "posts"
+      "posts",
+      "/studies",
+      "/essays",
+      "/opinions",
+      "!index.qmd"
     ],
     "posts\\2023-10-16-medien-und-politische-kommunikation-im-fokus\\index.qmd": [
       "B3049D40",
@@ -9,6 +13,33 @@
     ],
     "posts\\2023-10-16-medien-und-politische-kommunikation-im-fokus\\med_zus_index.qmd": [
       "posts"
+    ],
+    "studies\\index.qmd": [
+      "posts",
+      "!index.qmd",
+      "studies",
+      "index.qmd"
+    ],
+    "essays\\index.qmd": [
+      "posts",
+      "!index.qmd"
+    ],
+    "studies\\2023_10\\med_zus\\index.qmd": [
+      "posts"
+    ],
+    "studies\\2023_10_LR_med_zus\\index.qmd": [
+      "posts"
+    ],
+    "latest_content.qmd": [
+      "/studies",
+      "/essays",
+      "/opinions",
+      "index.qmd",
+      "!index.qmd"
+    ],
+    "opinions\\index.qmd": [
+      "posts",
+      "!index.qmd"
     ]
   }
 }

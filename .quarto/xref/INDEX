@@ -22,5 +22,29 @@
   },
   "posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.en.Rmd": {
     "med_zus_index.en.html": "ee23ddae"
+  },
+  "studies/index.qmd": {
+    "index.html": "3b825161"
+  },
+  "essays/index.qmd": {
+    "index.html": "6e49981b"
+  },
+  "studies/2023_10/med_zus/index.qmd": {
+    "index.html": "bd335844"
+  },
+  "studies/2023_10_LR_med_zus/index.qmd": {
+    "index.html": "70298e99"
+  },
+  "latest_content.qmd": {
+    "latest_content.html": "cf046aef"
+  },
+  "contact.qmd": {
+    "contact.html": "b72f7086"
+  },
+  "docs/contact.qmd": {
+    "contact.html": "e2870ee8"
+  },
+  "opinions/index.qmd": {
+    "index.html": "19200a81"
   }
 }

@@ -1,0 +1,16 @@
+---
+title: "Kontakt"
+sidebar: false
+page-layout: article
+toc: false
+title-block-banner: true
+---
+## Editorial
+
+**Email:** [lasserodeck@hotmail.de](mailto:lasserodeck@hotmail.de)
+
+**GitHub:** [@lrodeck](https://github.com/lrodeck)
+
+**Twitter:** [@LasseRodeck](https://twitter.com/LasseRodeck)
+
+**LinkedIn:** [Lasse Rodeck](https://www.linkedin.com/in/lasse-rodeck-84801b22b/)

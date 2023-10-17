@@ -1,0 +1,17 @@
+---
+pagetitle: Fallstudien | PolitikPulse
+title: Fallstudien
+subtitle: Die echte Welt dadraußen
+search: false  
+listing:
+  contents: 
+  - studies
+  - "index.qmd"
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  page-size: 30
+  feed: true
+---

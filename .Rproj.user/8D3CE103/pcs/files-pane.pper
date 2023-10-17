@@ -2,8 +2,12 @@
     "path": "~/R Projects/PolitikPulse",
     "sortOrder": [
         {
-            "columnIndex": 2,
+            "columnIndex": 1,
             "ascending": true
+        },
+        {
+            "columnIndex": 2,
+            "ascending": false
         }
     ]
 }

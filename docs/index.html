@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Das wichtigste aus der Forschung in den Politik Wissenschaften">
 
-<title>PolitikPuls</title>
+<title>PolitikPulse - Politik Pulse</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,10 +31,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./Owl.jpeg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,20 +66,104 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-latest-content .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-latest-content'] = new List('listing-latest-content', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-studies .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-studies'] = new List('listing-studies', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-essays .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-essays'] = new List('listing-essays', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-opinions .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-opinions'] = new List('listing-opinions', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -93,29 +177,22 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-<script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({
-  "notice_banner_type":"simple",
-  "consent_type":"implied",
-  "palette":"light",
-  "language":"en",
-  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
-  "notice_banner_reject_button_hide":false,
-  "preferences_center_close_button_hide":false,
-  "website_name":""
-  });
-});
-</script> 
-  
-
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="rwds.css">
+<meta property="og:title" content="PolitikPulse - Politik Pulse">
+<meta property="og:description" content="Das wichtigste aus der Forschung in den Politik Wissenschaften">
+<meta property="og:image" content="https://politikpulse.net/City.jpeg">
+<meta property="og:site-name" content="PolitikPulse">
+<meta name="twitter:title" content="PolitikPulse - Politik Pulse">
+<meta name="twitter:description" content="Das wichtigste aus der Forschung in den Politik Wissenschaften">
+<meta name="twitter:image" content="https://politikpulse.net/City.jpeg">
+<meta name="twitter:site" content="@LasseRodeck">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -123,10 +200,7 @@ cookieconsent.run({
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./Owl.jpeg" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">PolitikPuls</span>
+    <img src="./Owl.jpeg" alt="Politikwissenschaften im Fokus" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -134,38 +208,26 @@ cookieconsent.run({
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./studies/index.html" rel="" target="">
+ <span class="menu-text">Fallstudien</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./essays/index.html" rel="" target="">
+ <span class="menu-text">Essays und Ideen</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-more" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">More</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-wer-wir-sind" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Wer wir sind</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-more">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-wer-wir-sind">    
         <li>
     <a class="dropdown-item" href="./about.html" rel="" target="">
  <span class="dropdown-text">Über Uns</span></a>
   </li>  
     </ul>
   </li>
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">Über Uns</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
 </ul>
             <div class="quarto-navbar-tools">
 </div>
@@ -174,131 +236,152 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">PolitikPuls</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#politikpulse" id="toc-politikpulse" class="nav-link active" data-scroll-target="#politikpulse">PolitikPulse</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Kommunikationstheorie">Kommunikationstheorie <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Medien">Medien <span class="quarto-category-count">(1)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Politik Pulse</h1>
+</div>
 
-
-
-<p><img src="City.jpeg" class="img-fluid"></p>
-<section id="politikpulse" class="level1">
-<h1>PolitikPulse</h1>
-<p>Welcome to Plastic Beach.</p>
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
+<div>
+  <div class="description">
+    <p>Das wichtigste aus der Forschung in den Politik Wissenschaften</p>
   </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,analysis,Machine Learning,AI,Kommunikationstheorie,Medien" data-listing-date-sort="1697407200000" data-listing-file-modified-sort="1697547831043" data-listing-date-modified-sort="1697493600000" data-listing-reading-time-sort="68">
-<div class="thumbnail">
-<p><a href="./posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.html"> <img src="./posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/image.jpeg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.html">
-<h3 class="no-anchor listing-title">
-Medien und Politische Kommunikation im Fokus
-</h3>
-<div class="listing-subtitle">
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="content-container">
+<div class="top-story orange-background">
+<p><a href="./studies/2023_10_LR_med_zus/index.html"></a></p><a href="./studies/2023_10_LR_med_zus/index.html">
+<div class="grid">
+<section id="politik-heute" class="g-col-12 g-col-lg-4 top-story-text">
+<h2>Politik Heute</h2>
+</section>
+<div class="g-col-12 g-col-lg-8 top-story-img">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Kommunikationstheorie'); return false;">
-Kommunikationstheorie
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Medien'); return false;">
-Medien
+</a><p><a href="./studies/2023_10_LR_med_zus/index.html"></a></p>
 </div>
 </div>
-<a href="./posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.html">
-<div class="listing-description">
-<p>Wie uns Textverarbeitungsalgorithmen eine Neue Welt eröffnen</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-10-16-medien-und-politische-kommunikation-im-fokus/med_zus_index.html">
-<div class="listing-date">
-Oct 16, 2023
-</div>
-<div class="listing-author">
-Lasse Rodeck
-</div>
-</a>
+<div class="header-text">
+<div class="content-container">
+<div class="header-block">
+<p>Politik Pulse ist die Plattform, die politische Theorie und quantitative Ansätze vereint, um aktuelle Forschung und tiefgreifende Analysen zugänglich zu machen und so ein breites Publikum für die Vielfalt der politischen Wissenschaft zu begeistern.</p>
 </div>
 </div>
+</div>
+<div class="content-container">
+<div class="listing-block">
+<p><a href="latest-content.qmd"></a></p><a href="latest-content.qmd">
+<h2 id="neue-beiträge">Neue Beiträge</h2>
+</a><p><a href="latest-content.qmd"></a></p>
+<div id="listing-latest-content" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div>
+</div>
+</div>
+<div class="pullout-text">
+<div class="pullout-container">
+<div class="pullout-block yellow-background">
+<p><img src="images/quote-purple.png" class="img-fluid" width="100"></p>
+<h2 id="zitat-zitat-zitat">Zitat Zitat Zitat</h2>
+<div class="button">
+<p><a href="./studies/2023_10_LR_med_zus/index.html">Lesen Sie den ganzen Artikel</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-container">
+<div class="listing-block">
+<p><a href="./essays/index.html"></a></p><a href="./essays/index.html">
+<h2 id="essays">Essays</h2>
+</a><p><a href="./essays/index.html"></a></p>
+<div id="listing-essays" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</div>
+</div>
+<div class="pullout-text">
+<div class="pullout-container">
+<div class="pullout-block pink-background">
+<p><img src="images/quote-purple.png" class="img-fluid" width="100"></p>
+<h2 id="politische-theorie">Politische Theorie</h2>
+<p>Was in der Politischen Theorie vor sich geht</p>
+<div class="button">
+<p><a href="./studies/2023_10_LR_med_zus/index.html">Lesen Sie den ganzen Artikel</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-container">
+<div class="listing-block">
+<p><a href="./studies/index.html"></a></p><a href="./studies/index.html">
+<h2 id="fall-studien">Fall Studien</h2>
+</a><p><a href="./studies/index.html"></a></p>
+<div id="case-studies">
+
+</div>
+</div>
+</div>
+<div class="pullout-text">
+<div class="pullout-container">
+<div class="pullout-block blue-background">
+<p><img src="images/quote-purple.png" class="img-fluid" width="100"></p>
+<h2 id="der-hype-um-die-neuen-large-language-ai-modelle-ist-in-vollem-gange.-doch-jenseits-der-modelle-als-produktivtools-könnten-sie-wissenschaftlern-die-forschung-deutlich-vereinfachen.-qualitative-analysen-die-vorher-monate-gedauert-hätten-lassen-sich-jetzt-schon-automatisieren">Der Hype um die neuen Large Language AI Modelle ist in vollem gange. Doch Jenseits der Modelle als Produktivtools könnten sie Wissenschaftlern die Forschung deutlich vereinfachen. Qualitative Analysen die vorher Monate gedauert hätten, lassen sich jetzt schon automatisieren</h2>
+<p>Eine Entdeckungstour in den Large Language Modellen</p>
+<div class="button">
+<p><a href="./studies/2023_10_LR_med_zus/index.html">Lesen Sie den ganzen Artikel</a></p>
+</div>
+</div>
+<div class="g-col-12 g-col-md-1">
+
+</div>
+<section id="about-us" class="g-col-12 g-col-md-2">
+<h3>About us</h3>
+<p><a href="./about.html">Our aims</a><br>
+<a href="./contact.html">Contact us</a></p>
+</section>
+<section id="follow-us" class="g-col-12 g-col-md-2">
+<h3>Follow us</h3>
+<p><a href="https://github.com/lrodeck">GitHub</a><br>
+<a href="https://twitter.com/LasseRodeck">Twitter</a><br>
+</p>
+</section>
+<!-- ::: {.g-col-12 .g-col-md-12}
+### Our partners
+logos to go here
+::: -->
+</div>
+</div>
+
+
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -532,13 +615,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-studies">
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><div class="quarto-listing quarto-listing-container-grid" id="listing-opinions">
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lrodeck">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/LasseRodeck">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lasse-rodeck-84801b22b/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+</ul>
+    <div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://lrodeck.github.io/PolitikPulse/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://lrodeck.github.io/PolitikPulse/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
