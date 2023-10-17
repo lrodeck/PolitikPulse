@@ -47,12 +47,12 @@
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #939bc9;
+  color: #fdf5e6;
   font-weight: 400;
 }
 
 .navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
-  color: #939bc9;
+  color: #fdf5e6;
 }
 
 .nav-item {
@@ -94,7 +94,7 @@
   text-align: inherit;
   text-transform: uppercase;
   white-space: nowrap;
-  background-color: rgba(0,0,0,0);
+  background-color: #fdf5e6;
   border: 0;
 }
 
@@ -150,7 +150,7 @@
   font-family: 'Courier New';
   font-size: .9em;
   font-weight: 400;
-  color: #939bc9;
+  color: black;
   text-transform: uppercase;
   border: solid 1px;
   border-radius: 0.25rem;
@@ -255,7 +255,7 @@ div.csl-entry {
   border: none;
   border-radius: 0px;
   background-color: black;
-  color: white;
+  color: #fdf5e6;
   padding: 0.85em 1em;
   text-align: center;
   display: inline-block;
@@ -274,7 +274,7 @@ div.csl-entry {
 }
 
 .article-btn a {
-  color: white;
+  color: #fdf5e6;
   font-weight: 500;
   display: block;
   width: auto;
@@ -309,7 +309,7 @@ div.csl-entry {
   border: none;
   border-radius: 0px;
   background-color: black;
-  color: white;
+  color: #fdf5e6;
   padding: 0.85em 1em;
   text-align: center;
   display: inline-block;
@@ -326,7 +326,7 @@ div.csl-entry {
 }
 
 .nav-btn a {
-  color: white;
+  color: #fdf5e6;
   font-weight: 500;
   display: block;
   width: auto;
@@ -355,7 +355,7 @@ div.csl-entry {
 .sidebar nav[role=doc-toc] ul>li>a.active {
   border-left: 1px solid #939bc9;
   font-weight: 500;
-  color: #939bc9 !important;
+  color: #fdf5e6 !important;
 }
 
 .sidebar nav[role=doc-toc]>ul a {
@@ -649,7 +649,7 @@ div.quarto-post a {
 
 /*-- callout styles --*/
 .callout {
-  background-color: white;
+  background-color: #fdf5e6;
 }
 
 
@@ -813,7 +813,7 @@ div.quarto-post a {
   border: none;
   border-radius: 0px;
   color: black;
-  background-color: white;
+  background-color: #fdf5e6;
   padding: 0.85em 1em;
   text-align: center;
   display: inline-block;
@@ -895,7 +895,7 @@ div.quarto-post a {
 /*-- nav footer styles --*/
 
 .nav-footer {
-  color: white;
+  color: #fdf5e6;
   font-family: 'Courier New';
   font-weight: 400;
   padding-left: 1.5em !important;
@@ -907,7 +907,7 @@ body:not(.floating) .nav-footer {
 }
 
 .nav-footer a {
-  color: white;
+  color: #fdf5e6;
 }
 
 .nav-footer a:hover {
@@ -953,9 +953,9 @@ body:not(.floating) .nav-footer {
 /* webR */
 .btn-webr {
   background-color: #939bc9;
-  color: white;
+  color: #fdf5e6;
 }
 
 pre code {
-  background-color: #f8f8f8;
+  background-color: #fdf5e6;
 }
