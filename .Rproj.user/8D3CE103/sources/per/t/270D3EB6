@@ -1,0 +1,31 @@
+{
+    "id": "270D3EB6",
+    "path": "~/R Projects/PolitikPulse/index.qmd",
+    "project_path": "index.qmd",
+    "type": "quarto_markdown",
+    "hash": "2014458225",
+    "contents": "",
+    "dirty": false,
+    "created": 1697569226073.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "497:746",
+        "docOutlineVisible": "1",
+        "cursorPosition": "16,20",
+        "scrollLine": "18"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1697557348,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1697557348,
+    "read_only": false,
+    "read_only_alternatives": []
+}

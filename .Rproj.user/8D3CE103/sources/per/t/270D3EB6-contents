@@ -1,0 +1,194 @@
+---
+title: "Politik Pulse"
+page-layout: custom
+section-divs: false
+editor: source
+sidebar: false
+search: false
+description: | 
+  Das wichtigste aus der Forschung in den Politik Wissenschaften
+image: City.jpeg
+listing:
+    - id: latest-content
+      contents: 
+      - /studies
+      - /essays
+      - /opinions
+      - "!index.qmd"
+      sort: "date desc"
+      type: grid
+      categories: false
+      sort-ui: false
+      filter-ui: false
+      max-items: 3
+      feed: false
+    - id: studies
+      contents: 
+      - /studies
+      - "!index.qmd"
+      sort: "date desc"
+      type: grid
+      categories: false
+      sort-ui: false
+      filter-ui: false
+      max-items: 3
+      feed: false
+    - id: essays
+      contents: 
+      - /essays
+      - "!index.qmd"
+      sort: "date desc"
+      type: grid
+      categories: false
+      sort-ui: false
+      filter-ui: false
+      max-items: 3
+      feed: false
+    - id: opinions
+      contents: 
+      - /opinions
+      - "!index.qmd"
+      sort: "date desc"
+      type: grid
+      categories: false
+      sort-ui: false
+      filter-ui: false
+      max-items: 3
+      feed: false
+toc: false
+cookie-consent: true
+---
+
+::: content-container
+::: {.top-story .orange-background}
+<a href="studies/2023_10_LR_med_zus/index.qmd">
+
+::: grid
+::: {.g-col-12 .g-col-lg-4 .top-story-text}
+## Politik Heute
+:::
+
+::: {.g-col-12 .g-col-lg-8 .top-story-img}
+:::
+:::
+
+</a>
+:::
+:::
+
+::: header-text
+::: content-container
+::: header-block
+Politik Pulse ist die Plattform, die politische Theorie und quantitative Ansätze vereint, um aktuelle Forschung und tiefgreifende Analysen zugänglich zu machen und so ein breites Publikum für die Vielfalt der politischen Wissenschaft zu begeistern.
+:::
+:::
+:::
+
+::: content-container
+::: listing-block
+<a href="latest-content.qmd">
+
+## Neue Beiträge
+
+</a>
+
+::: {#latest-content}
+:::
+:::
+:::
+
+::: pullout-text
+::: pullout-container
+::: {.pullout-block .yellow-background}
+{{< fa quote-left >}}
+
+## Zitat Zitat Zitat
+
+::: button
+[Lesen Sie den ganzen Artikel](studies/2023_10_LR_med_zus/index.qmd)
+:::
+:::
+:::
+:::
+
+::: content-container
+::: listing-block
+<a href="essays/index.qmd">
+
+## Essays
+
+</a>
+
+::: {#essays}
+:::
+:::
+:::
+
+::: pullout-text
+::: pullout-container
+::: {.pullout-block .pink-background}
+{{< fa quote-left >}}
+
+## Politische Theorie
+
+Was in der Politischen Theorie vor sich geht
+
+::: button
+[Lesen Sie den ganzen Artikel](studies/2023_10_LR_med_zus/index.qmd)
+:::
+:::
+:::
+:::
+
+::: content-container
+::: listing-block
+<a href="studies/index.qmd">
+
+## Fall Studien
+
+</a>
+
+::: {#case-studies}
+:::
+:::
+:::
+
+::: pullout-text
+::: pullout-container
+::: {.pullout-block .blue-background}
+{{< fa quote-left >}}
+
+## Der Hype um die neuen Large Language AI Modelle ist in vollem gange. Doch Jenseits der Modelle als Produktivtools könnten sie Wissenschaftlern die Forschung deutlich vereinfachen. Qualitative Analysen die vorher Monate gedauert hätten, lassen sich jetzt schon automatisieren
+
+Eine Entdeckungstour in den Large Language Modellen
+
+::: button
+[Lesen Sie den ganzen Artikel](studies/2023_10_LR_med_zus/index.qmd)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-1}
+:::
+
+::: {.g-col-12 .g-col-md-2}
+
+### About us
+
+[Our aims](about.qmd)\
+[Contact us](contact.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-2}
+### Follow us
+
+[{{< fa brands github >}}](https://github.com/lrodeck)  [{{< fa brands square-x-twitter >}}](https://twitter.com/LasseRodeck)\
+:::
+
+```{=html}
+<!-- ::: {.g-col-12 .g-col-md-12}
+### Our partners
+logos to go here
+::: -->
+```
+:::
+:::
